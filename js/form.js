@@ -2,7 +2,7 @@
 let modal = document.getElementById('myModal');
 
 
-let btn = document.getElementById("good");
+let btn = document.getElementById("addcottage");
 
 
 let span = document.getElementById("close");
