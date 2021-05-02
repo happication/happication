@@ -18,522 +18,506 @@
         </nav>
     </header>
     <hr>
-    <main>
-        <section id="filtering">
-            <fieldset id="formContaner">
-                <legend>Filter</legend>
-                <form id="form" action="">
-                    <label for="location">LOCATION</label>
+    <section id="sec">
+        <main>
+            <section id="filtering">
+                <fieldset id="formContaner">
+                    <legend>Filter</legend>
+                    <form id="form" action="" >
+                        <label for="location"><i class="fas fa-map-marker-alt"></i>LOCATION</label>
+                        <br>
+                        <select name="location" >
+                            <option value="amman">Amman</option> 
+                            <option value="irbid">Irbid</option>
+                            <option value="salt">Salt</option>
+                            <option value="jerash">Jerash</option>
+                        </select>
+                        <br>
+                        <label for="size">SIZE</label>
+                        <br>
+                        <select id="size">
+                            <option value="small">1-10 Person</option>
+                            <option value="medium">11-50 Person</option>
+                            <option value="large">100-150 Person</option>
+                        </select>
+                        <br>
+                        <button id="submit">Submit</button>
+                        <br>
+                        <button id="reset">Reset</button>
+                    </form>
+                </fieldset>
+            </section>
+            <!-------------------------- images --------------------------->
+            <section id="cottagesSection">
+                <section class="cottageContaner" id="test1">
+                    <img class="thumbnail" src="./img/bird/thum.jpg" alt="">
+                    <h2 class="cottageName">BIRD VILLA</h2>
+                   <p id="rateresult">3</p> <span class="fa fa-star" id="starresult"></span>
+                    <ul class="details">
+                        <li><i class="fas fa-map-marker-alt"></i> Amman-Airport street</li>
+                        <li>1-10 Persons</li>
+                        <li>barbecue, children Swimming pool.
+                        </li>
+                        <li>120 JD per day</li>
+                    </ul>
+                    <button class="reserve" class="reserve" id="img1">RESERVE</button>
                     <br>
-                    <select name="location" id="location">
-                        <option value="amman">Amman</option>
-                        <option value="irbid">Irbid</option>
-                        <option value="salt">Salt</option>
-                        <option value="jerash">Jerash</option>
+                    <label for="rate">RATE THIS cottage</label>
+                    <br>
+                    <section >
+                        <span class="fa fa-star" id="star1"></span>
+                        <span class="fa fa-star" id="star2"></span>
+                        <span class="fa fa-star" id="star3"></span>
+                        <span class="fa fa-star" id="star4"></span>
+                        <span class="fa fa-star" id="star5"></span>
+                 
+                    </section>
+                    <section class="extraImag">
+                        <img src="./img/bird/1 (1).jpg" alt="" />
+                        <img src="./img/bird/1 (5).jpg" alt="" />
+                        <img src="./img/bird/1 (4).jpg" alt="" />
+                    </section>
+                </section>
+                <section class="cottageContaner" id="test2">
+                    <img class="thumbnail" src="./img/Byblos/thum.jpg" alt="">
+                    <h2 class="cottageName">BYBLOS VILLA</h2>
+                    <p class="result">rate result</p>
+                    <ul class="details">
+                        <li><i class="fas fa-map-marker-alt"></i> Salt</li>
+                        <li>11-50 Persons</li>
+                        <li>Heated swimming pool, children Swimming pool, Jacuzzi, Air-conditioned rooms ,Children's
+                            play area.</li>
+                        <li>170 JD per day</li>
+                    </ul>
+                    <button class="reserve" class="reserve" id="img2">RESERVE</button>
+                    <br>
+                    <label for="rate">RATE THIS cottage</label>
+                    <br>
+                    <select name="rate" class="rate">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
                     </select>
+                    <section class="extraImag">
+                        <img src="./img/Byblos/1 (2).jpg" alt="" />
+                        <img src="./img/Byblos/1 (4).jpg" alt="" />
+                        <img src="./img/Byblos/1 (5).jpg" alt="" />
+                    </section>
+                </section>
+                <section class="cottageContaner">
+                    <img class="thumbnail" src="./img/Deer/thum.jpg" alt="">
+                    <h2 class="cottageName">DEER VILLA</h2>
+                    <p class="result">rate result</p>
+                    <ul class="details">
+                        <li><i class="fas fa-map-marker-alt"></i> Amman- Iraq Al-Ameer</li>
+                        <li>1-10 Persons</li>
+                        <li>DJ, barbecue, Heated swimming pool.</li>
+                        <li>100 JD Per day</li>
+                    </ul>
+                    <button class="reserve" class="reserve" id="img3">RESERVE</button>
                     <br>
-                    <label for="size">SIZE</label>
+                    <label for="rate">RATE THIS cottage</label>
                     <br>
-                    <select id="size">
-                        <option value="small">1-10 Person</option>
-                        <option value="medium">11-50 Person</option>
-                        <option value="large">100-150 Person</option>
+                    <select name="rate" class="rate">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
                     </select>
+                </section>
+                <section class="cottageContaner">
+                    <img class="thumbnail" src="./img/Dream/thum.jpg" alt="">
+                    <h2 class="cottageName">DREAM VILLA</h2>
+                    <p class="result">rate result</p>
+                    <ul class="details">
+                        <li><i class="fas fa-map-marker-alt"></i> Amman - Jordan street</li>
+                        <li>11-50 Persons</li>
+                        <li>barbecue, football stadium, Children's play area.</li>
+                        <li>150JD Per day</li>
+                    </ul>
+                    <button class="reserve" class="reserve" id="img4">RESERVE</button>
                     <br>
-                    <button id="submit">Submit</button>
+                    <label for="rate">RATE THIS cottage</label>
                     <br>
-                    <button id="reset">Reset</button>
-                </form>
-            </fieldset>
-        </section>
-        <section id="cottagesSection">
-            <section id="cottageContaner">
-                <img id="thumbnail" src="data:image/jpeg;base64,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" alt="">
-                <h2 id="cottageName" class="dropImg">cottage Name</h2>
-                <p id="result">rate result</p>
-                <ul id="details">
-                    <li>Location</li>
-                    <li>Size</li>
-                    <li>Additions</li>
-                    <li>Price</li>
-                </ul>
-                <button id="reserve" class="reserve">RESERVE</button>
-                <br>
-                <label for="rate">RATE THIS cottage</label>
-                <br>
-                <select name="rate" id="rate">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
+                    <select name="rate" class="rate">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </section>
+                <section class="cottageContaner">
+                    <img class="thumbnail" src="./img/Eva Farm/thum.jpg" alt="">
+                    <h2 class="cottageName">EVA VILLA</h2>
+                    <p class="result">rate result</p>
+                    <ul class="details">
+                        <li><i class="fas fa-map-marker-alt"></i> Irbid</li>
+                        <li>11-50 Persons</li>
+                        <li>barbecue, Heated swimming pool, Sun loungers, children Swimming pool, Children's play area.
+                        </li>
+                        <li>200JD per day</li>
+                    </ul>
+                    <button class="reserve" class="reserve" id="img5">RESERVE</button>
+                    <br>
+                    <label for="rate">RATE THIS cottage</label>
+                    <br>
+                    <select name="rate" class="rate">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </section>
+                <section class="cottageContaner">
+                    <img class="thumbnail" src="./img/Farah/thum.jpg" alt="">
+                    <h2 class="cottageName">FARAH VILLA</h2>
+                    <p class="result">rate result</p>
+                    <ul class="details">
+                        <li><i class="fas fa-map-marker-alt"></i> Jerash</li>
+                        <li>50-100 Persons</li>
+                        <li>barbecue, children Swimming pool, table tennis, External headphones.</li>
+                        <li>200JD Per day</li>
+                    </ul>
+                    <button class="reserve" class="reserve" id="img6">RESERVE</button>
+                    <br>
+                    <label for="rate">RATE THIS cottage</label>
+                    <br>
+                    <select name="rate" class="rate">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </section>
+                <section class="cottageContaner">
+                    <img class="thumbnail" src="./img/Hawaii/thum.jpg" alt="">
+                    <h2 class="cottageName">HAWAII VILLA</h2>
+                    <p class="result">rate result</p>
+                    <ul class="details">
+                        <li><i class="fas fa-map-marker-alt"></i> Salt</li>
+                        <li>11-50 Persons</li>
+                        <li>Heated swimming pool, Sun loungers, table tennis, Play Station, WIFI, External headphones,
+                            barbecue.‏</li>
+                        <li>170JD per day</li>
+                    </ul>
+                    <button class="reserve" class="reserve" id="img7">RESERVE</button>
+                    <br>
+                    <label for="rate">RATE THIS cottage</label>
+                    <br>
+                    <select name="rate" class="rate">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </section>
+                <section class="cottageContaner">
+                    <img class="thumbnail" src="./img/Mariam/thum.jpeg" alt="">
+                    <h2 class="cottageName">MARIAM VILLA</h2>
+                    <p class="result">rate result</p>
+                    <ul class="details">
+                        <li><i class="fas fa-map-marker-alt"></i> Jerash</li>
+                        <li>51-100 Persons</li>
+                        <li>barbecue, children Swimming pool, Air-conditioned rooms, Jacuzzi, Children's play area, DJ,
+                            Sun loungers, Play Station, WIFI.</li>
+                        <li>220JD per day.</li>
+                    </ul>
+                    <button class="reserve" class="reserve" id="img8">RESERVE</button>
+                    <br>
+                    <label for="rate">RATE THIS cottage</label>
+                    <br>
+                    <select name="rate" class="rate">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </section>
+                <section class="cottageContaner">
+                    <img class="thumbnail" src="./img/mountain/thum.jpg" alt="">
+                    <h2 class="cottageName">MOUNTAIN VILLA</h2>
+                    <p class="result">rate result</p>
+                    <ul class="details">
+                        <li><i class="fas fa-map-marker-alt"></i> Jerash</li>
+                        <li>51-100 Persons</li>
+                        <li>barbecue, Children's play area, DJ, football stadium, Heated swimming pool, Sun loungers,
+                            table tennis, Play Station, WIFI.‏
+                        </li>
+                        <li>190JD per day</li>
+                    </ul>
+                    <button class="reserve" class="reserve" id="img9">RESERVE</button>
+                    <br>
+                    <label for="rate">RATE THIS cottage</label>
+                    <br>
+                    <select name="rate" class="rate">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </section>
+                <section class="cottageContaner">
+                    <img class="thumbnail" src="./img/Philadelphia/thum.jpg" alt="">
+                    <h2 class="cottageName">PHILADELPHIA VILLA</h2>
+                    <p class="result">rate result</p>
+                    <ul class="details">
+                        <li><i class="fas fa-map-marker-alt"></i> Jerash</li>
+                        <li>11-50 Persons</li>
+                        <li>barbecue, Heated swimming pool, Play Station.</li>
+                        <li>110JD per day.</li>
+                    </ul>
+                    <button class="reserve" class="reserve" id="img10">RESERVE</button>
+                    <br>
+                    <label for="rate">RATE THIS cottage</label>
+                    <br>
+                    <select name="rate" class="rate">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </section>
+                <section class="cottageContaner">
+                    <img class="thumbnail" src="./img/Sky village/thum.jpg" alt="">
+                    <h2 class="cottageName">SKY VILLAGE VILLA</h2>
+                    <p class="result">rate result</p>
+                    <ul class="details">
+                        <li><i class="fas fa-map-marker-alt"></i> Amman - Al Bahhath</li>
+                        <li>1-10 Persons</li>
+                        <li>barbecue, Sun loungers, WIFI, External headphones‏.</li>
+                        <li>130JD Per day.</li>
+                    </ul>
+                    <button class="reserve" class="reserve" id="img11">RESERVE</button>
+                    <br>
+                    <label for="rate">RATE THIS cottage</label>
+                    <br>
+                    <select name="rate" class="rate">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </section>
+                <section class="cottageContaner">
+                    <img class="thumbnail" src="./img/Switch Villa/thum.jpg" alt="">
+                    <h2 class="cottageName">SWITCH VILLA</h2>
+                    <p class="result">rate result</p>
+                    <ul class="details">
+                        <li><i class="fas fa-map-marker-alt"></i> Salt</li>
+                        <li>11-50 Persons</li>
+                        <li>barbecue, children Swimming pool, Air-conditioned rooms, Jacuzzi, Children's play area, Sun
+                            loungers, table tennis, Play Station.</li>
+                        <li>160JD Per day.</li>
+                    </ul>
+                    <button class="reserve" class="reserve" id="img12">RESERVE</button>
+                    <br>
+                    <label for="rate">RATE THIS cottage</label>
+                    <br>
+                    <select name="rate" class="rate">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </section>
+                <section class="cottageContaner">
+                    <img class="thumbnail" src="./img/Teresa Chalet/thum.jpeg" alt="">
+                    <h2 class="cottageName">TERESA CHALET VILLA</h2>
+                    <p class="result">rate result</p>
+                    <ul class="details">
+                        <li><i class="fas fa-map-marker-alt"></i> Irbid</li>
+                        <li>11-50 Persons</li>
+                        <li>barbecue, children Swimming pool, Air-conditioned rooms, Jacuzzi, Children's play area, Play
+                            Station</li>
+                        <li>170JD per day</li>
+                    </ul>
+                    <button class="reserve" class="reserve" id="img13">RESERVE</button>
+                    <br>
+                    <label for="rate">RATE THIS cottage</label>
+                    <br>
+                    <select name="rate" class="rate">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </section>
+                <section class="cottageContaner">
+                    <img class="thumbnail" src="./img/Zaid/thum.jpg" alt="">
+                    <h2 class="cottageName">ZAID VIILA</h2>
+                    <p class="result">rate result</p>
+                    <ul class="details">
+                        <li><i class="fas fa-map-marker-alt"></i> Irbid</li>
+                        <li>11-50 Persons</li>
+                        <li>barbecue, DJ, Heated swimming pool, External headphones‏, Heated swimming pool, Sun
+                            loungers.</li>
+                        <li>110JD per day.</li>
+                    </ul>
+                    <button class="reserve" class="reserve" id="img14">RESERVE</button>
+                    <br>
+                    <label for="rate">RATE THIS cottage</label>
+                    <br>
+                    <select name="rate" class="rate">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </section>
+                <section class="cottageContaner">
+                    <img class="thumbnail" src="./img/adam/thum.jpg" alt="mainImg">
+                    <h2 class="cottageName">Adam Villa</h2>
+                    <p class="result">rate result</p>
+                    <ul class="details">
+                        <li><i class="fas fa-map-marker-alt"></i> jerash-ruins of Jerash</li>
+                        <li>1-15 persons</li>
+                        <li>Sun loungers, Air-conditioned rooms, WIFI, barbecue, table tennis, DJ, Play Station,
+                            External headphones</li>
+                        <li>120 Jd Per day</li>
+                    </ul>
+                    <button class="reserve" class="reserve" id="img15">RESERVE</button>
+                    <br>
+                    <label for="rate">RATE THIS cottage</label>
+                    <br>
+                    <select name="rate" class="rate">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </section>
+                <section class="cottageContaner">
+                    <img class="thumbnail" src="./img/paradise/thum.jpg" alt="mainImg">
+                    <h2 class="cottageName">Paradise Villa</h2>
+                    <p class="result">rate result</p>
+                    <ul class="details">
+                        <li><i class="fas fa-map-marker-alt"></i> Salt-Gilead</li>
+                        <li>1-20 Persons</li>
+                        <li>children Swimming pool, Sun loungers, Air-conditioned rooms, barbecue, Play Station, WIFI,
+                            External headphones, DJ, Billiard, Jacuzzi, table tennis </li>
+                        <li>150 Jd Per day</li>
+                    </ul>
+                    <button class="reserve" class="reserve" id="img16">RESERVE</button>
+                    <br>
+                    <label for="rate">RATE THIS cottage</label>
+                    <br>
+                    <select name="rate" class="rate">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </section>
+                <section class="cottageContaner">
+                    <img class="thumbnail" src="./img/sawa /thum.jpg" alt="mainImg">
+                    <h2 class="cottageName">Sawa Villa</h2>
+                    <p class="result">rate result</p>
+                    <ul class="details">
+                        <li><i class="fas fa-map-marker-alt"></i>Irbid-Near to Irbid Mall </li>
+                        <li>1-10 persons</li>
+                        <li>Air-conditioned rooms, DJ, WIFI, barbecue, Play Station, External headphones, Children's
+                            play area, Sun loungers</li>
+                        <li>110 Jd Per day</li>
+                    </ul>
+                    <button class="reserve" class="reserve" id="img17">RESERVE</button>
+                    <br>
+                    <label for="rate">RATE THIS cottage</label>
+                    <br>
+                    <select name="rate" class="rate">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </section>
+                <section class="cottageContaner">
+                    <img class="thumbnail" src="./img/wings/thum.jpg" alt="mainImg">
+                    <h2 class="cottageName">Wings Villa</h2>
+                    <p class="result">rate result</p>
+                    <ul class="details">
+                        <li><i class="fas fa-map-marker-alt"></i>Amman-Airport street </li>
+                        <li>1-20 Persons</li>
+                        <li>Air-conditioned rooms,barbecue, Children's play area, DJ, Heated swimming pool, Sun
+                            loungers, table tennis, Play Station, WIFI, External headphones</li>
+                        <li>130 Jd Per day</li>
+                    </ul>
+                    <button class="reserve" class="reserve" id="img18">RESERVE</button>
+                    <br>
+                    <label for="rate">RATE THIS cottage</label>
+                    <br>
+                    <select name="rate" class="rate">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </section>
+                <section class="cottageContaner">
+                    <img class="thumbnail" src="./img/yafa/thum.jpg" alt="mainImg">
+                    <h2 class="cottageName">Yafa Villa</h2>
+                    <p class="result">rate result</p>
+                    <ul class="details">
+                        <li><i class="fas fa-map-marker-alt"></i>Salt-Gilead </li>
+                        <li>1-30 Persons</li>
+                        <li>Air-conditioned rooms,barbecue, Jacuzzi, Children's play area, DJ, Sun loungers, Heated
+                            swimming pool, Play Station, WIFI, External headphones</li>
+                        <li>150 Jd Per day</li>
+                    </ul>
+                    <button class="reserve" class="reserve" id="img19">RESERVE</button>
+                    <br>
+                    <label for="rate">RATE THIS cottage</label>
+                    <br>
+                    <select name="rate" class="rate">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </section>
+                <section class="cottageContaner">
+                    <img class="thumbnail" src="./img/yalla/thum.jpg" alt="mainImg">
+                    <h2 class="cottageName">Yalla Villa</h2>
+                    <p class="result">rate result</p>
+                    <ul class="details">
+                        <li><i class="fas fa-map-marker-alt"></i>Amman,airport Street</li>
+                        <li>1-10 Persons</li>
+                        <li>External headphones, barbecue, Air-conditioned rooms, Sun loungers,DJ, WIFI, </li>
+                        <li>100 Jd Per day</li>
+                    </ul>
+                    <button class="reserve" class="reserve" id="img20">RESERVE</button>
+                    <br>
+                    <label for="rate">RATE THIS cottage</label>
+                    <br>
+                    <select name="rate" class="rate">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </section>
             </section>
-            <section id="cottageContaner">
-                <img id="thumbnail" src="https://via.placeholder.com/200x200/000000" alt="">
-                <h2 id="cottageName" class="dropImg">cottage Name</h2>
-                <p id="result">rate result</p>
-                <ul id="details">
-                    <li>Location</li>
-                    <li>Size</li>
-                    <li>Additions</li>
-                    <li>Price</li>
-                </ul>
-                <button id="reserve" class="reserve">RESERVE</button>
-                <br>
-                <label for="rate">RATE THIS cottage</label>
-                <br>
-                <select name="rate" id="rate">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-            </section>
-            <section id="cottageContaner">
-                <img id="thumbnail" src="https://via.placeholder.com/200x200/000000" alt="">
-                <h2 id="cottageName" class="dropImg">cottage Name</h2>
-                <p id="result">rate result</p>
-                <ul id="details">
-                    <li>Location</li>
-                    <li>Size</li>
-                    <li>Additions</li>
-                    <li>Price</li>
-                </ul>
-                <button id="reserve" class="reserve">RESERVE</button>
-                <br>
-                <label for="rate">RATE THIS cottage</label>
-                <br>
-                <select name="rate" id="rate">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-            </section>
-            <section id="cottageContaner">
-                <img id="thumbnail" src="https://via.placeholder.com/200x200/000000" alt="">
-                <h2 id="cottageName" class="dropImg">cottage Name</h2>
-                <p id="result">rate result</p>
-                <ul id="details">
-                    <li>Location</li>
-                    <li>Size</li>
-                    <li>Additions</li>
-                    <li>Price</li>
-                </ul>
-                <button id="reserve" class="reserve">RESERVE</button>
-                <br>
-                <label for="rate">RATE THIS cottage</label>
-                <br>
-                <select name="rate" id="rate">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-            </section>
-            <section id="cottageContaner">
-                <img id="thumbnail" src="https://via.placeholder.com/200x200/000000" alt="">
-                <h2 id="cottageName" class="dropImg">cottage Name</h2>
-                <p id="result">rate result</p>
-                <ul id="details">
-                    <li>Location</li>
-                    <li>Size</li>
-                    <li>Additions</li>
-                    <li>Price</li>
-                </ul>
-                <button id="reserve" class="reserve">RESERVE</button>
-                <br>
-                <label for="rate">RATE THIS cottage</label>
-                <br>
-                <select name="rate" id="rate">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-            </section>
-            <section id="cottageContaner">
-                <img id="thumbnail" src="https://via.placeholder.com/200x200/000000" alt="">
-                <h2 id="cottageName" class="dropImg">cottage Name</h2>
-                <p id="result">rate result</p>
-                <ul id="details">
-                    <li>Location</li>
-                    <li>Size</li>
-                    <li>Additions</li>
-                    <li>Price</li>
-                </ul>
-                <button id="reserve" class="reserve">RESERVE</button>
-                <br>
-                <label for="rate">RATE THIS cottage</label>
-                <br>
-                <select name="rate" id="rate">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-            </section>
-            <section id="cottageContaner">
-                <img id="thumbnail" src="https://via.placeholder.com/200x200/000000" alt="">
-                <h2 id="cottageName" class="dropImg">cottage Name</h2>
-                <p id="result">rate result</p>
-                <ul id="details">
-                    <li>Location</li>
-                    <li>Size</li>
-                    <li>Additions</li>
-                    <li>Price</li>
-                </ul>
-                <button id="reserve" class="reserve">RESERVE</button>
-                <br>
-                <label for="rate">RATE THIS cottage</label>
-                <br>
-                <select name="rate" id="rate">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-            </section>
-            <section id="cottageContaner">
-                <img id="thumbnail" src="https://via.placeholder.com/200x200/000000" alt="">
-                <h2 id="cottageName" class="dropImg">cottage Name</h2>
-                <p id="result">rate result</p>
-                <ul id="details">
-                    <li>Location</li>
-                    <li>Size</li>
-                    <li>Additions</li>
-                    <li>Price</li>
-                </ul>
-                <button id="reserve" class="reserve">RESERVE</button>
-                <br>
-                <label for="rate">RATE THIS cottage</label>
-                <br>
-                <select name="rate" id="rate">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-            </section>
-            <section id="cottageContaner">
-                <img id="thumbnail" src="https://via.placeholder.com/200x200/000000" alt="">
-                <h2 id="cottageName" class="dropImg">cottage Name</h2>
-                <p id="result">rate result</p>
-                <ul id="details">
-                    <li>Location</li>
-                    <li>Size</li>
-                    <li>Additions</li>
-                    <li>Price</li>
-                </ul>
-                <button id="reserve" class="reserve">RESERVE</button>
-                <br>
-                <label for="rate">RATE THIS cottage</label>
-                <br>
-                <select name="rate" id="rate">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-            </section>
-            <section id="cottageContaner">
-                <img id="thumbnail" src="https://via.placeholder.com/200x200/000000" alt="">
-                <h2 id="cottageName" class="dropImg">cottage Name</h2>
-                <p id="result">rate result</p>
-                <ul id="details">
-                    <li>Location</li>
-                    <li>Size</li>
-                    <li>Additions</li>
-                    <li>Price</li>
-                </ul>
-                <button id="reserve" class="reserve">RESERVE</button>
-                <br>
-                <label for="rate">RATE THIS cottage</label>
-                <br>
-                <select name="rate" id="rate">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-            </section>
-            <section id="cottageContaner">
-                <img id="thumbnail" src="https://via.placeholder.com/200x200/000000" alt="">
-                <h2 id="cottageName" class="dropImg">cottage Name</h2>
-                <p id="result">rate result</p>
-                <ul id="details">
-                    <li>Location</li>
-                    <li>Size</li>
-                    <li>Additions</li>
-                    <li>Price</li>
-                </ul>
-                <button id="reserve" class="reserve">RESERVE</button>
-                <br>
-                <label for="rate">RATE THIS cottage</label>
-                <br>
-                <select name="rate" id="rate">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-            </section>
-            <section id="cottageContaner">
-                <img id="thumbnail" src="https://via.placeholder.com/200x200/000000" alt="">
-                <h2 id="cottageName" class="dropImg">cottage Name</h2>
-                <p id="result">rate result</p>
-                <ul id="details">
-                    <li>Location</li>
-                    <li>Size</li>
-                    <li>Additions</li>
-                    <li>Price</li>
-                </ul>
-                <button id="reserve" class="reserve">RESERVE</button>
-                <br>
-                <label for="rate">RATE THIS cottage</label>
-                <br>
-                <select name="rate" id="rate">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-            </section>
-            <section id="cottageContaner">
-                <img id="thumbnail" src="https://via.placeholder.com/200x200/000000" alt="">
-                <h2 id="cottageName" class="dropImg">cottage Name</h2>
-                <p id="result">rate result</p>
-                <ul id="details">
-                    <li>Location</li>
-                    <li>Size</li>
-                    <li>Additions</li>
-                    <li>Price</li>
-                </ul>
-                <button id="reserve" class="reserve">RESERVE</button>
-                <br>
-                <label for="rate">RATE THIS cottage</label>
-                <br>
-                <select name="rate" id="rate">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-            </section>
-            <section id="cottageContaner">
-                <img id="thumbnail" src="https://via.placeholder.com/200x200/000000" alt="">
-                <h2 id="cottageName" class="dropImg">cottage Name</h2>
-                <p id="result">rate result</p>
-                <ul id="details">
-                    <li>Location</li>
-                    <li>Size</li>
-                    <li>Additions</li>
-                    <li>Price</li>
-                </ul>
-                <button id="reserve" class="reserve">RESERVE</button>
-                <br>
-                <label for="rate">RATE THIS cottage</label>
-                <br>
-                <select name="rate" id="rate">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-            </section>
-            <section id="cottageContaner">
-                <img id="thumbnail" src="https://via.placeholder.com/200x200/000000" alt="">
-                <h2 id="cottageName" class="dropImg">cottage Name</h2>
-                <p id="result">rate result</p>
-                <ul id="details">
-                    <li>Location</li>
-                    <li>Size</li>
-                    <li>Additions</li>
-                    <li>Price</li>
-                </ul>
-                <button id="reserve" class="reserve">RESERVE</button>
-                <br>
-                <label for="rate">RATE THIS cottage</label>
-                <br>
-                <select name="rate" id="rate">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-            </section>
-            <section id="cottageContaner">
-                <img id="thumbnail" src="https://via.placeholder.com/200x200/000000" alt="">
-                <h2 id="cottageName" class="dropImg">cottage Name</h2>
-                <p id="result">rate result</p>
-                <ul id="details">
-                    <li>Location</li>
-                    <li>Size</li>
-                    <li>Additions</li>
-                    <li>Price</li>
-                </ul>
-                <button id="reserve" class="reserve">RESERVE</button>
-                <br>
-                <label for="rate">RATE THIS cottage</label>
-                <br>
-                <select name="rate" id="rate">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-            </section>
-            <section id="cottageContaner">
-                <img id="thumbnail" src="https://via.placeholder.com/200x200/000000" alt="">
-                <h2 id="cottageName" class="dropImg">cottage Name</h2>
-                <p id="result">rate result</p>
-                <ul id="details">
-                    <li>Location</li>
-                    <li>Size</li>
-                    <li>Additions</li>
-                    <li>Price</li>
-                </ul>
-                <button id="reserve" class="reserve">RESERVE</button>
-                <br>
-                <label for="rate">RATE THIS cottage</label>
-                <br>
-                <select name="rate" id="rate">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-            </section>
-            <section id="cottageContaner">
-                <img id="thumbnail" src="https://via.placeholder.com/200x200/000000" alt="">
-                <h2 id="cottageName" class="dropImg">cottage Name</h2>
-                <p id="result">rate result</p>
-                <ul id="details">
-                    <li>Location</li>
-                    <li>Size</li>
-                    <li>Additions</li>
-                    <li>Price</li>
-                </ul>
-                <button id="reserve" class="reserve">RESERVE</button>
-                <br>
-                <label for="rate">RATE THIS cottage</label>
-                <br>
-                <select name="rate" id="rate">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-            </section>
-            <section id="cottageContaner">
-                <img id="thumbnail" src="https://via.placeholder.com/200x200/000000" alt="">
-                <h2 id="cottageName" class="dropImg">cottage Name</h2>
-                <p id="result">rate result</p>
-                <ul id="details">
-                    <li>Location</li>
-                    <li>Size</li>
-                    <li>Additions</li>
-                    <li>Price</li>
-                </ul>
-                <button id="reserve" class="reserve">RESERVE</button>
-                <br>
-                <label for="rate">RATE THIS cottage</label>
-                <br>
-                <select name="rate" id="rate">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-            </section>
-            <section id="cottageContaner">
-                <img id="thumbnail" src="https://via.placeholder.com/200x200/000000" alt="">
-                <h2 id="cottageName" class="dropImg">cottage Name</h2>
-                <p id="result">rate result</p>
-                <ul id="details">
-                    <li>Location</li>
-                    <li>Size</li>
-                    <li>Additions</li>
-                    <li>Price</li>
-                </ul>
-                <button id="reserve" class="reserve">RESERVE</button>
-                <br>
-                <label for="rate">RATE THIS cottage</label>
-                <br>
-                <select name="rate" id="rate">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-            </section>
-            <section id="cottageContaner">
-                <img id="thumbnail" src="https://via.placeholder.com/200x200/000000" alt="">
-                <h2 id="cottageName" class="dropImg">cottage Name</h2>
-                <p id="result">rate result</p>
-                <ul id="details">
-                    <li>Location</li>
-                    <li>Size</li>
-                    <li>Additions</li>
-                    <li>Price</li>
-                </ul>
-                <button id="reserve" class="reserve">RESERVE</button>
-                <br>
-                <label for="rate">RATE THIS cottage</label>
-                <br>
-                <select name="rate" id="rate">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-            </section>
-            <section id="cottageContaner">
-                <img id="thumbnail" src="https://via.placeholder.com/200x200/000000" alt="">
-                <h2 id="cottageName" class="dropImg">cottage Name</h2>
-                <p id="result">rate result</p>
-                <ul id="details">
-                    <li>Location</li>
-                    <li>Size</li>
-                    <li>Additions</li>
-                    <li>Price</li>
-                </ul>
-                <button id="reserve" class="reserve">RESERVE</button>
-                <br>
-                <label for="rate">RATE THIS cottage</label>
-                <br>
-                <select name="rate" id="rate">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-            </section>
-        </section>
-    </main>
-    <hr>
+        </main>
+    </section>
     <footer>
         <ul>
             <li>FB</li>
@@ -542,7 +526,9 @@
         </ul>
         <p>All right reserved &copy; TAGZ Team</p>
     </footer>
-    <script src="./js/booking.js"></script>
+    <script src="./js/savedata.js"></script>
+    <script src="./js/rate.js"></script>
+    <!-- <script src="./js/booking.js"></script> -->
 </body>
 
 </html>
