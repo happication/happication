@@ -5,7 +5,10 @@
 
 .thumbnail {
     height: 200px;
-    width: 400px;
+
+
+    width: 300px;
+
 }
 
 #cottagesSection {
@@ -22,11 +25,5 @@
 
 .extraImag img {
     width: 100%;
-}
 
-#staravg{
-    color: orange;
-}
-#starresult{
-    color: orange;
 }

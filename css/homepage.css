@@ -28,7 +28,10 @@ a {
     
 }
 
-a:hover{
+
+
+nav a:hover{
+
     background-color: rgba(0,0,0, 0.6);
     cursor: pointer;   
 }
@@ -37,7 +40,7 @@ nav {
     display: grid;
     grid-template-columns: repeat(4,1fr);
     text-align: center;
-   
+
 }
 
 
@@ -47,24 +50,26 @@ nav {
     width: 100%;
     z-index: -10;
     display: none;
-    filter: blur(3px);
-    -webkit-filter: blur(3px);
+
+    filter: blur(1.5px);
+    -webkit-filter: blur(1.5px);
     
-        -webkit-animation-name: fade;
-        -webkit-animation-duration: 3s;
-        animation-name: fade;
-        animation-duration: 3s;
-      }
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 3s;
+    }
       
-      @-webkit-keyframes fade {
-        from {opacity: .9} 
-        to {opacity: 1}
-      }
+@-webkit-keyframes fade {
+    from {opacity: .9} 
+    to {opacity: 1}
+}
       
-      @keyframes fade {
-        from {opacity: .9} 
-        to {opacity: 1}
-      }
+@keyframes fade {
+    from {opacity: .9} 
+    to {opacity: 1}
+}
+
  
 
 
@@ -115,7 +120,7 @@ button:hover{
 #About-website {
     margin-top: 100px;
     text-align: center;
-    background-color: rgba(0,0,0, 0.6);
+
 }
 
 #social-contact{
