@@ -9,15 +9,15 @@
 
 <body>
     <header>
-        <div id = "logo-img">
+        <div id="logo-img">
             <img src="" alt="logo">
         </div>
         <nav id="Nav">
             <a href="./index.html">Home</a>
-            <a href="./form.html">Check out</a>
+            <a id="move" href="./form.html">Check out</a>
             <a href="./booking.html">Book Now</a>
             <a href="./about-us.html">About us</a>
-        </nav> 
+        </nav>
     </header>
     <hr>
     <section id="sec">
@@ -32,19 +32,14 @@
                         <label for="location"><i class="fas fa-map-marker-alt"></i>LOCATION</label>
                         <br>
                         <select name="location" id="location">
-                        <option value="amman">Amman</option>
-                        <option value="irbid">Irbid</option>
-                        <option value="salt">Salt</option>
-                        <option value="jerash">Jerash</option>
-                    </select>
+                            <option value="all">all</option>
+                            <option value="amman">Amman</option>
+                            <option value="irbid">Irbid</option>
+                            <option value="salt">Salt</option>
+                            <option value="jerash">Jerash</option>
+                        </select>
                         <br>
                         <label for="size">SIZE</label>
-                        <br>
-                        <select id="size">
-                        <option value="small">1-10 Person</option>
-                        <option value="medium">11-50 Person</option>
-                        <option value="large">100-150 Person</option>
-                    </select>
                         <br>
                         <button id="submit">Submit</button>
                         <br>
@@ -53,69 +48,76 @@
                 </fieldset>
             </section>
             <!-------------------------- images --------------------------->
-            <section id="cottagesSection">
-                <section class="cottageContaner">
-                    <img id="BIRD" class="thumbnail" src="./img/bird/thum.jpg" alt="">
-                    <h2 class="cottageName">BIRD VILLA</h2>
-                    <p class="result">rate result</p>
-                    <ul class="details">
-                        <li><i class="fas fa-map-marker-alt"></i> Amman-Airport street</li>
-                        <li>1-10 Persons</li>
-                        <li>barbecue, children Swimming pool.
-                        </li>
-                        <li>120 JD per day</li>
-                    </ul>
-                    <button class="reserve" class="reserve" id="img1">RESERVE</button>
-                    <br>
-                    <label for="rate">RATE THIS cottage</label>
-                    <br>
-                     <section >
-                        <span class="fa fa-star" id="star1"></span>
-                        <span class="fa fa-star" id="star2"></span>
-                        <span class="fa fa-star" id="star3"></span>
-                        <span class="fa fa-star" id="star4"></span>
-                        <span class="fa fa-star" id="star5"></span>
-                 
+             <div id="try">
+
+             </div> 
+        
+            <!-- <div >
+                <section id="cottagesSection">
+                    <section class="cottageContaner">
+                        <img id="BIRD" class="thumbnail" src="" alt="">
+                        <h2 class="cottageName" id="head2"></h2>
+                        <p class="result" id="rates"></p>
+                        <ul class="details">
+                            <li id="li1"><i class="fas fa-map-marker-alt"></i> </li>
+                            <li id="li2"></li>
+                            <li id="li3"></li>
+                            <li id="li4"></li>
+                        </ul>
+                        <button class="reserve" class="reserve" id="img1">RESERVE</button>
+                        <br>
+                        <label for="rate">RATE THIS cottage</label>
+                        <br>
+                        <section>
+                            <span class="fa fa-star" id="star1"></span>
+                            <span class="fa fa-star" id="star2"></span>
+                            <span class="fa fa-star" id="star3"></span>
+                            <span class="fa fa-star" id="star4"></span>
+                            <span class="fa fa-star" id="star5"></span>
+    
+                        </section>
+                        <section id="BIRD-extra" class="extraImag">
+                            <img src="./img/bird/1 (1).jpg" alt="" />
+                            <img src="./img/bird/1 (5).jpg" alt="" />
+                            <img src="./img/bird/1 (3).jpg" alt="" />
+                            <img src="./img/bird/1 (7).jpg" alt="" />
+                            <img src="./img/bird/1 (9).jpg" alt="" />
+                            <img src="./img/bird/1 (11).jpg" alt="" />
+                        </section>
                     </section>
-                    <section id="BIRD-extra" class="extraImag">
-                        <img src="./img/bird/1 (1).jpg" alt="" />
-                        <img src="./img/bird/1 (5).jpg" alt="" />
-                        <img src="./img/bird/1 (3).jpg" alt="" />
-                        <img src="./img/bird/1 (7).jpg" alt="" />
-                        <img src="./img/bird/1 (9).jpg" alt="" />
-                        <img src="./img/bird/1 (11).jpg" alt="" />
+                    <section class="cottageContaner">
+                        <img id="BYBLOS" class="thumbnail" src="./img/Byblos/thum.jpg" alt="">
+                        <h2 class="cottageName">BYBLOS VILLA</h2>
+                        <p class="result">rate result</p>
+                        <ul class="details">
+                            <li><i class="fas fa-map-marker-alt"></i> Salt</li>
+                            <li>11-50 Persons</li>
+                            <li>Heated swimming pool, children Swimming pool, Jacuzzi, Air-conditioned rooms ,Children's
+                                play area.</li>
+                            <li>170 JD per day</li>
+                        </ul>
+                        <button class="reserve" class="reserve" id="img2">RESERVE</button>
+                        <br>
+                        <label for="rate">RATE THIS cottage</label>
+                        <br>
+                        <select name="rate" class="rate">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <section id="BYBLOS-extra" class="extraImag">
+                            <img src="./img/Byblos/1 (2).jpg" alt="" />
+                            <img src="./img/Byblos/1 (4).jpg" alt="" />
+                            <img src="./img/Byblos/1 (5).jpg" alt="" />
+                            <img src="./img/Byblos/1 (6).jpg" alt="" />
+                            <img src="./img/Byblos/1 (7).jpg" alt="" />
+                            <img src="./img/Byblos/1 (13).jpg" alt="" />
+                        </section>
                     </section>
-                </section>
-                <section class="cottageContaner">
-                    <img id="BYBLOS" class="thumbnail" src="./img/Byblos/thum.jpg" alt="">
-                    <h2 class="cottageName">BYBLOS VILLA</h2>
-                    <p class="result">rate result</p>
-                    <ul class="details">
-                        <li><i class="fas fa-map-marker-alt"></i> Salt</li>
-                        <li>11-50 Persons</li>
-                        <li>Heated swimming pool, children Swimming pool, Jacuzzi, Air-conditioned rooms ,Children's play area.</li>
-                        <li>170 JD per day</li>
-                    </ul>
-                   <button class="reserve" class="reserve" id="img2">RESERVE</button>
-                    <br>
-                    <label for="rate">RATE THIS cottage</label>
-                    <br>
-                    <select name="rate" class="rate">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    </select>
-                    <section id="BYBLOS-extra" class="extraImag">
-                        <img src="./img/Byblos/1 (2).jpg" alt="" />
-                        <img src="./img/Byblos/1 (4).jpg" alt="" />
-                        <img src="./img/Byblos/1 (5).jpg" alt="" />
-                        <img src="./img/Byblos/1 (6).jpg" alt="" />
-                        <img src="./img/Byblos/1 (7).jpg" alt="" />
-                        <img src="./img/Byblos/1 (13).jpg" alt="" />
-                    </section>
-                </section>
+            </div>
+           
                 <section class="cottageContaner">
                     <img id="DEER" class="thumbnail" src="./img/Deer/thum.jpg" alt="">
                     <h2 class="cottageName">DEER VILLA</h2>
@@ -126,17 +128,17 @@
                         <li>DJ, barbecue, Heated swimming pool.</li>
                         <li>100 JD Per day</li>
                     </ul>
-                    <button class="reserve" class="reserve">RESERVE</button>
+                    <button class="reserve" class="reserve" id="img3">RESERVE</button>
                     <br>
                     <label for="rate">RATE THIS cottage</label>
                     <br>
                     <select name="rate" class="rate">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
                     <section id="DEER-extra" class="extraImag">
                         <img src="./img/Deer/1 (5).jpg" alt="" />
                         <img src="./img/Deer/1 (6).jpg" alt="" />
@@ -157,19 +159,19 @@
 
                     <button class="reserve" class="reserve" id="img4">RESERVE</button>
 
-                    
+
 
                     <br>
                     <label for="rate">RATE THIS cottage</label>
                     <br>
                     <select name="rate" class="rate">
 
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
                     <section id="DREAM-extra" class="extraImag">
                         <img src="./img/Dream/1 (7).jpg" alt="" />
                         <img src="./img/Dream/1 (14).jpg" alt="" />
@@ -188,22 +190,23 @@
                         <li><i class="fas fa-map-marker-alt"></i> Irbid</li>
                         <li>11-50 Persons</li>
 
-                        <li>barbecue, Heated swimming pool, Sun loungers, children Swimming pool, Children's play area.</li>
+                        <li>barbecue, Heated swimming pool, Sun loungers, children Swimming pool, Childrens play area.
+                        </li>
                         <li>200JD per day</li>
                     </ul>
-                  <button class="reserve" class="reserve" id="img5">RESERVE</button>
+                    <button class="reserve" class="reserve" id="img5">RESERVE</button>
 
                     <br>
                     <label for="rate">RATE THIS cottage</label>
                     <br>
                     <select name="rate" class="rate">
 
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
                     <section id="EVA-extra" class="extraImag">
                         <img src="./img/Byblos/1 (5).jpg" alt="" />
                         <img src="./img/Byblos/1 (6).jpg" alt="" />
@@ -233,12 +236,12 @@
                     <br>
                     <select name="rate" class="rate">
 
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
                     <section id="FARAH-extra" class="extraImag">
                         <img src="./img/Farah/1 (1).jpg" alt="" />
                         <img src="./img/Farah/1 (4).jpg" alt="" />
@@ -268,12 +271,12 @@
                     <br>
                     <select name="rate" class="rate">
 
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
                     <section id="HAWAII-extra" class="extraImag">
                         <img src="./img/Hawaii/1 (2).jpg" alt="" />
                         <img src="./img/Hawaii/1 (4).jpg" alt="" />
@@ -291,8 +294,8 @@
                         <li><i class="fas fa-map-marker-alt"></i> Jerash</li>
                         <li>51-100 Persons</li>
 
-                        <li>barbecue, children Swimming pool, Air-conditioned rooms, Jacuzzi, Children's play area, DJ,
-                            Sun loungers, Play Station, WIFI.</li>
+                        <li>barbecue, children Swimming pool, Air-conditioned rooms, Jacuzzi, Childrens play area, DJ,
+                            Sun loungers, Play Station,WIFI.</li>
                         <li>220JD per day.</li>
                     </ul>
                     <button class="reserve" class="reserve" id="img8">RESERVE</button>
@@ -302,12 +305,12 @@
                     <br>
                     <select name="rate" class="rate">
 
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
                     <section id="MARIAM-extra" class="extraImag">
                         <img src="./img/Mariam/1 (3).jpg" alt="" />
                         <img src="./img/Mariam/1 (3).jpeg" alt="" />
@@ -340,12 +343,12 @@
                     <br>
                     <select name="rate" class="rate">
 
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
                     <section id="MOUNTAIN-extra" class="extraImag">
                         <img src="./img/mountain/1 (1).jpg" alt="" />
                         <img src="./img/mountain/1 (4).jpg" alt="" />
@@ -378,12 +381,12 @@
                     <br>
                     <select name="rate" class="rate">
 
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
                     <section id="PHILADELPHIA-extra" class="extraImag">
                         <img src="./img/Philadelphia/1 (1).jpg" alt="" />
                         <img src="./img/Philadelphia/1 (2).jpg" alt="" />
@@ -395,7 +398,7 @@
                 </section>
                 <section class="cottageContaner">
                     <img id="SKY" class="thumbnail" src="./img/Sky village/thum.jpg" alt="">
-       <h2 class="cottageName">SKY VILLAGE VILLA</h2>
+                    <h2 class="cottageName">SKY VILLAGE VILLA</h2>
                     <p class="result">rate result</p>
                     <ul class="details">
                         <li><i class="fas fa-map-marker-alt"></i> Amman - Al Bahhath</li>
@@ -411,19 +414,19 @@
                     <br>
                     <select name="rate" class="rate">
 
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-                <section id="SKY-extra" class="extraImag">
-                    <img src="./img/Sky village/1 (3).jpg" alt="" />
-                    <img src="./img/Sky village/1 (4).jpg" alt="" />
-                    <img src="./img/Sky village/1 (7).jpg" alt="" />
-                    <img src="./img/Sky village/1 (8).jpg" alt="" />
-                    <img src="./img/Sky village/1 (6).jpg" alt="" />
-                </section>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <section id="SKY-extra" class="extraImag">
+                        <img src="./img/Sky village/1 (3).jpg" alt="" />
+                        <img src="./img/Sky village/1 (4).jpg" alt="" />
+                        <img src="./img/Sky village/1 (7).jpg" alt="" />
+                        <img src="./img/Sky village/1 (8).jpg" alt="" />
+                        <img src="./img/Sky village/1 (6).jpg" alt="" />
+                    </section>
                 </section>
                 <section class="cottageContaner">
                     <img id="SWITCH" class="thumbnail" src="./img/Switch Villa/thum.jpg" alt="">
@@ -434,7 +437,7 @@
                         <li><i class="fas fa-map-marker-alt"></i> Salt</li>
                         <li>11-50 Persons</li>
 
-                        <li>barbecue, children Swimming pool, Air-conditioned rooms, Jacuzzi, Children's play area, Sun
+                        <li>barbecue, children Swimming pool, Air-conditioned rooms, Jacuzzi, Childrens play area, Sun
                             loungers, table tennis, Play Station.</li>
                         <li>160JD Per day.</li>
                     </ul>
@@ -445,23 +448,23 @@
                     <br>
                     <select name="rate" class="rate">
 
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-                <section id="SWITCH-extra" class="extraImag">
-                    <img src="./img/Switch Villa/1 (1).jpg" alt="" />
-                    <img src="./img/Switch Villa/1 (3).jpg" alt="" />
-                    <img src="./img/Switch Villa/1 (4).jpg" alt="" />
-                    <img src="./img/Switch Villa/1 (6).jpg" alt="" />
-                    <img src="./img/Switch Villa/1 (9).jpg" alt="" />
-                    <img src="./img/Switch Villa/1 (12).jpg" alt="" />
-                    <img src="./img/Switch Villa/1 (5).jpg" alt="" />
-                    <img src="./img/Switch Villa/1 (7).jpg" alt="" />
-                    <img src="./img/Switch Villa/1 (11).jpg" alt="" />
-                </section>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <section id="SWITCH-extra" class="extraImag">
+                        <img src="./img/Switch Villa/1 (1).jpg" alt="" />
+                        <img src="./img/Switch Villa/1 (3).jpg" alt="" />
+                        <img src="./img/Switch Villa/1 (4).jpg" alt="" />
+                        <img src="./img/Switch Villa/1 (6).jpg" alt="" />
+                        <img src="./img/Switch Villa/1 (9).jpg" alt="" />
+                        <img src="./img/Switch Villa/1 (12).jpg" alt="" />
+                        <img src="./img/Switch Villa/1 (5).jpg" alt="" />
+                        <img src="./img/Switch Villa/1 (7).jpg" alt="" />
+                        <img src="./img/Switch Villa/1 (11).jpg" alt="" />
+                    </section>
                 </section>
                 <section class="cottageContaner">
                     <img id="TERESA" class="thumbnail" src="./img/Teresa Chalet/thum.jpeg" alt="">
@@ -472,7 +475,7 @@
                         <li><i class="fas fa-map-marker-alt"></i> Irbid</li>
                         <li>11-50 Persons</li>
 
-                        <li>barbecue, children Swimming pool, Air-conditioned rooms, Jacuzzi, Children's play area, Play
+                        <li>barbecue, children Swimming pool, Air-conditioned rooms, Jacuzzi, Childrens play area, Play
                             Station</li>
                         <li>170JD per day</li>
                     </ul>
@@ -498,7 +501,7 @@
                         <img src="./img/Teresa Chalet/1 (7).jpeg" alt="" />
                         <img src="./img/Teresa Chalet/1 (1).jpeg" alt="" />
                         <img src="./img/Teresa Chalet/1 (11).jpeg" alt="" />
-                        
+
                     </section>
                 </section>
                 <section class="cottageContaner">
@@ -522,20 +525,20 @@
                     <br>
                     <select name="rate" class="rate">
 
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-                <section id="ZAID-extra" class="extraImag">
-                    <img src="./img/Zaid/1 (5).jpg" alt="" />
-                    <img src="./img/Zaid/1 (7).jpg" alt="" />
-                    <img src="./img/Zaid/1 (1).jpg" alt="" />
-                    <img src="./img/Zaid/1 (8).jpg" alt="" />
-                    <img src="./img/Zaid/1 (3).jpg" alt="" />
-                   
-                </section>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <section id="ZAID-extra" class="extraImag">
+                        <img src="./img/Zaid/1 (5).jpg" alt="" />
+                        <img src="./img/Zaid/1 (7).jpg" alt="" />
+                        <img src="./img/Zaid/1 (1).jpg" alt="" />
+                        <img src="./img/Zaid/1 (8).jpg" alt="" />
+                        <img src="./img/Zaid/1 (3).jpg" alt="" />
+
+                    </section>
                 </section>
                 <section class="cottageContaner">
 
@@ -560,22 +563,22 @@
                     <br>
                     <select name="rate" class="rate">
 
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-                <section id="ADAM-extra" class="extraImag">
-                    <img src="./img/adam/1.jpg" alt="" />
-                    <img src="./img/adam/3.jpg" alt="" />
-                    <img src="./img/adam/4.jpg" alt="" />
-                    <img src="./img/adam/8.jpg" alt="" />
-                    <img src="./img/adam/9.jpg" alt="" />
-                    <img src="./img/adam/7.jpg" alt="" />
-                    <img src="./img/adam/5.jpg" alt="" />
-                    <img src="./img/adam/6.jpg" alt="" />
-                </section>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <section id="ADAM-extra" class="extraImag">
+                        <img src="./img/adam/1.jpg" alt="" />
+                        <img src="./img/adam/3.jpg" alt="" />
+                        <img src="./img/adam/4.jpg" alt="" />
+                        <img src="./img/adam/8.jpg" alt="" />
+                        <img src="./img/adam/9.jpg" alt="" />
+                        <img src="./img/adam/7.jpg" alt="" />
+                        <img src="./img/adam/5.jpg" alt="" />
+                        <img src="./img/adam/6.jpg" alt="" />
+                    </section>
                 </section>
                 <section class="cottageContaner">
 
@@ -600,26 +603,26 @@
                     <br>
                     <select name="rate" class="rate">
 
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-                <section id="PARADISE-extra" class="extraImag">
-                    <img src="./img/paradise/3.jpg" alt="" />
-                    <img src="./img/paradise/7.jpg" alt="" />
-                    <img src="./img/paradise/9.jpg" alt="" />
-                    <img src="./img/paradise/1.jpg" alt="" />
-                    <img src="./img/paradise/2.jpg" alt="" />
-                    <img src="./img/paradise/4.jpg" alt="" />
-                    <img src="./img/paradise/5.jpg" alt="" />
-                    <img src="./img/paradise/6.jpg" alt="" />
-                    <img src="./img/paradise/8.jpg" alt="" />
-                    <img src="./img/paradise/12.jpg" alt="" />
-                    <img src="./img/paradise/11.jpg" alt="" />
-                    
-                </section>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <section id="PARADISE-extra" class="extraImag">
+                        <img src="./img/paradise/3.jpg" alt="" />
+                        <img src="./img/paradise/7.jpg" alt="" />
+                        <img src="./img/paradise/9.jpg" alt="" />
+                        <img src="./img/paradise/1.jpg" alt="" />
+                        <img src="./img/paradise/2.jpg" alt="" />
+                        <img src="./img/paradise/4.jpg" alt="" />
+                        <img src="./img/paradise/5.jpg" alt="" />
+                        <img src="./img/paradise/6.jpg" alt="" />
+                        <img src="./img/paradise/8.jpg" alt="" />
+                        <img src="./img/paradise/12.jpg" alt="" />
+                        <img src="./img/paradise/11.jpg" alt="" />
+
+                    </section>
                 </section>
                 <section class="cottageContaner">
 
@@ -644,19 +647,19 @@
                     <br>
                     <select name="rate" class="rate">
 
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-                <section id="SAWA-extra" class="extraImag">
-                    <img src="./img/sawa /1.jpg" alt="" />
-                    <img src="./img/sawa /5.jpg" alt="" />
-                    <img src="./img/sawa /7.jpg" alt="" />
-                    <img src="./img/sawa /4.jpg" alt="" />
-                    <img src="./img/sawa /6.jpg" alt="" />
-                </section>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <section id="SAWA-extra" class="extraImag">
+                        <img src="./img/sawa /1.jpg" alt="" />
+                        <img src="./img/sawa /5.jpg" alt="" />
+                        <img src="./img/sawa /7.jpg" alt="" />
+                        <img src="./img/sawa /4.jpg" alt="" />
+                        <img src="./img/sawa /6.jpg" alt="" />
+                    </section>
                 </section>
                 <section class="cottageContaner">
 
@@ -681,28 +684,28 @@
                     <br>
                     <select name="rate" class="rate">
 
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-                <section id="WINGS-extra" class="extraImag">
-                    <img src="./img/wings/1.jpg" alt="" />
-                    <img src="./img/wings/4.jpg" alt="" />
-                    <img src="./img/wings/7.jpg" alt="" />
-                    <img src="./img/wings/2.jpg" alt="" />
-                    <img src="./img/wings/3.jpg" alt="" />
-                    <img src="./img/wings/5.jpg" alt="" />
-                </section>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <section id="WINGS-extra" class="extraImag">
+                        <img src="./img/wings/1.jpg" alt="" />
+                        <img src="./img/wings/4.jpg" alt="" />
+                        <img src="./img/wings/7.jpg" alt="" />
+                        <img src="./img/wings/2.jpg" alt="" />
+                        <img src="./img/wings/3.jpg" alt="" />
+                        <img src="./img/wings/5.jpg" alt="" />
+                    </section>
                 </section>
                 <section class="cottageContaner">
 
-                    
+
                     <h2 class="cottageName">YAFA VILLA</h2>
 
                     <img id="YAFA" class="thumbnail" src="./img/yafa/thum.jpg" alt="mainImg">
-                   
+
 
 
                     <p class="result">rate result</p>
@@ -710,7 +713,7 @@
                         <li><i class="fas fa-map-marker-alt"></i>Salt-Gilead </li>
                         <li>1-30 Persons</li>
 
-                        <li>Air-conditioned rooms,barbecue, Jacuzzi, Children's play area, DJ, Sun loungers, Heated
+                        <li>Air-conditioned rooms,barbecue, Jacuzzi, Children play area, DJ, Sun loungers, Heated
                             swimming pool, Play Station, WIFI, External headphones</li>
                         <li>150 Jd Per day</li>
                     </ul>
@@ -721,22 +724,22 @@
                     <br>
                     <select name="rate" class="rate">
 
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-                <section id="YAFA-extra" class="extraImag">
-                    <img src="./img/yafa/1.jpg" alt="" />
-                    <img src="./img/yafa/3.jpg" alt="" />
-                    <img src="./img/yafa/4.jpg" alt="" />
-                    <img src="./img/yafa/5.jpg" alt="" />
-                    <img src="./img/yafa/6.jpg" alt="" />
-                    <img src="./img/yafa/7.jpg" alt="" />
-                    <img src="./img/yafa/2.jpg" alt="" />
-                    <img src="./img/yafa/8.jpg" alt="" />
-                </section>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <section id="YAFA-extra" class="extraImag">
+                        <img src="./img/yafa/1.jpg" alt="" />
+                        <img src="./img/yafa/3.jpg" alt="" />
+                        <img src="./img/yafa/4.jpg" alt="" />
+                        <img src="./img/yafa/5.jpg" alt="" />
+                        <img src="./img/yafa/6.jpg" alt="" />
+                        <img src="./img/yafa/7.jpg" alt="" />
+                        <img src="./img/yafa/2.jpg" alt="" />
+                        <img src="./img/yafa/8.jpg" alt="" />
+                    </section>
                 </section>
                 <section class="cottageContaner">
 
@@ -760,26 +763,26 @@
                     <br>
                     <select name="rate" class="rate">
 
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-                <section id="YALLA-extra" class="extraImag">
-                    <img src="./img/yalla/1.jpg" alt="" />
-                    <img src="./img/yalla/2.jpg" alt="" />
-                    <img src="./img/yalla/3.jpg" alt="" />
-                    <img src="./img/yalla/5.jpg" alt="" />
-                    <img src="./img/yalla/6.jpg" alt="" />
-                    <img src="./img/yalla/7.jpg" alt="" />
-                    <img src="./img/yalla/4.jpg" alt="" />
-                </section>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <section id="YALLA-extra" class="extraImag">
+                        <img src="./img/yalla/1.jpg" alt="" />
+                        <img src="./img/yalla/2.jpg" alt="" />
+                        <img src="./img/yalla/3.jpg" alt="" />
+                        <img src="./img/yalla/5.jpg" alt="" />
+                        <img src="./img/yalla/6.jpg" alt="" />
+                        <img src="./img/yalla/7.jpg" alt="" />
+                        <img src="./img/yalla/4.jpg" alt="" />
+                    </section>
 
                 </section>
             </section>
         </main>
-    </section>
+    </section> -->
     <footer>
         <div id="social-contact">
             <i class="fab fa-facebook-square"></i>
@@ -787,15 +790,22 @@
             <i class="fab fa-twitter"></i>
         </div>
     </footer>
-
-    <script src="./js/savedata.js"></script>
-    <script src="./js/rate.js"></script>
-  
-    <script src="./js/extraImg.js"></script>
-
     <script src="https://kit.fontawesome.com/9e5d1913ca.js" crossorigin="anonymous"></script>
 
-    <script src="./js/booking.js"></script>
+
+
+    <script src="./js/savedata.js"></script> 
+
+    <script src="./js/rate.js"></script>
+
+     <script src="./js/extraImg.js"></script> 
+
+
+<script src="./js/testrender.js"></script>
+
+<script src="./js/filter.js"></script>
+
+
 
 </body>
 
