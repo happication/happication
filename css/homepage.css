@@ -204,8 +204,8 @@ footer {
     width: 100%;
     z-index: -10;
     display: none;
-    filter: blur(1.5px);
-    -webkit-filter: blur(1.5px);
+    filter: blur(1px);
+    /* -webkit-filter: blur(1.5px); */
     -webkit-animation-name: fade;
     -webkit-animation-duration: 3s;
     animation-name: fade;
