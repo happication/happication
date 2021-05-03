@@ -134,12 +134,13 @@ function handleCustomerSubmit(event) {
   console.log(filter);
 
 for (let i =0 ; i<filter.length;i++){
-  
+
   booknow[i].onclick = function () {
+    all.shift();
     all.shift();
     let render = new Save(filter[i].name, filter[i].path)
     localStorage.setItem('key', JSON.stringify(all));
-
+   
     window.open("./form.html");
   }
 
