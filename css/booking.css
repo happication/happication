@@ -129,6 +129,15 @@ button {
     border-radius: 3px;
 }
 
+.moreImg {
+    /* position: relative; */
+    display: none;
+}
+
+.moreImg img {
+    width: 300px;
+}
+
 footer {
     text-align: center;
     margin-top: 30px;
@@ -142,10 +151,6 @@ footer {
     padding: 0px 10px;
 }
 
-
-
-
 #social-contact i:hover {
     cursor: pointer;
-
 }
