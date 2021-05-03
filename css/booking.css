@@ -149,3 +149,19 @@ footer {
     cursor: pointer;
 
 }
+
+.stars a:before {
+    position: relative;
+    font-size: 18px;
+    font-family: 'FontAwesome', serif;
+    display: inline-block;
+    content: "\f005";
+    color: #9e9e9e;
+}
+
+.stars a:hover:before,
+.stars a:hover ~ a:before,
+.stars a.active:before,
+.stars a.active ~ a:before {
+    color: rgba(6, 6, 252, 0.747);
+}
