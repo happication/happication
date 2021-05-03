@@ -28,6 +28,6 @@
 
 }
 
-#try *{
-    width: 500px;
+.divImg img{
+    width: 400px;
 }

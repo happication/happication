@@ -12,7 +12,7 @@ let names = document.getElementById('name');
 mainsection.appendChild(names);
 
 
-let data = JSON.parse(localStorage.getItem('keyes'));
+let data = JSON.parse(localStorage.getItem('key'));
 
 mainimg.src = data[0].path;
 
