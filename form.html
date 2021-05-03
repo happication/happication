@@ -8,45 +8,51 @@
 
 <body>
     <header>
-        <div id = "logo-img">
-            <img src="" alt="logo">
-        </div>
+
+        <img id="logo" src="./img/logo.png" alt="logo">
         <nav id="Nav">
             <a href="./index.html">Home</a>
-            <a href="./form.html">Check out</a>
-            <a href="./booking.html">Book Now</a>
             <a href="./about-us.html">About us</a>
-        </nav>      
+            <a href="./add-farm.html">Add Cottage</a>
+            <a id="navBook" href="./booking.html">Book Now</a>
+        </nav>
     </header>
     <main>
-        <section id="mainsection">
-            <img src="" alt="" id="mainimg">
-            <h1 id="name"></h1>
+        <section>
+            <section id="mainsection">
+                <article id="article">
+                    <h1 id="name"></h1>
+                    <p>You have made a good choice. <br> To complete your reservation, please complete the form next to picture :</p>
+        
+                </article>
+                <img src="" alt="" id="mainimg">
+                
+            </section>
         </section>
-
-        <article>
-            <p>You have made a choice.
-                To complete your reservation, please complete the following form</p>
-
-        </article>
+       <section>
+        
         <fieldset>
+            <img id="log" src="./img/logo.png" alt="logo">
             <legend>
                 <form id="addcottage" autocomplete="off">
-                    <label for="firstName">First name:</label>
-                    <input type="text" id="firstName" name="firstName" required >
-                    <label for="lastName">Last name:</label>
-                    <input type="text" id="lastName" name="lastName"required >
-                    <label for="phoneNumber">Phone number:</label>
-                    <input type="tel" id="phoneNumber" pattern=".{10,}" name="phoneNumber"  required>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    <label for="birthday">reserve date :</label>
-                    <input type="date" id="birthday" name="birthday"required>
-                    <input type="submit" value="Submit" >
+                    <label for="firstName">First name</label>
+                    <input type="text" id="firstName" name="firstName" required ><br>
+                    <label for="lastName">Last name</label>
+                    <input type="text" id="lastName" name="lastName"required ><br>
+                    <label id="phoneN" for="phoneNumber">Phone number</label>
+                    <input type="tel" id="phoneNumber" pattern=".{10,}" name="phoneNumber"  required><br>
+                    <label class="emai" for="email">Email</label>
+                    <input type="email" id="email" name="email" required><br>
+                    <label class="data" for="birthday">Reserve date </label>
+                    <input type="date" id="birthday" name="birthday"required> <br>
+                    <input type="submit" value="Submit" ><br>
                 </form>
-                <button class="show" id="show">confirme</button>
+                <button class="show" id="show" >confirme</button>
             </legend>
         </fieldset>
+       </section>
+
+        
        
         <div id="myModal" class="modal">
             <div class="modal-content">
@@ -78,6 +84,7 @@
             <i class="fab fa-instagram"></i>
             <i class="fab fa-twitter"></i>
         </div>
+        <p>All Rights reserved &copy;</p>
     </footer>
     <script src="https://kit.fontawesome.com/9e5d1913ca.js" crossorigin="anonymous"></script>
 
