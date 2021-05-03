@@ -4,89 +4,69 @@
 <head>
     <title>HAPPICATION</title>
     <script src="https://kit.fontawesome.com/9e5d1913ca.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="./img/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/booking.css">
 </head>
 
 <body>
     <header>
-        <div id = "logo-img">
-            <img src="" alt="logo">
-        </div>
+        <img id="logo" src="./img/logo.png" alt="logo">
         <nav id="Nav">
             <a href="./index.html">Home</a>
-            <a href="./form.html">Check out</a>
-            <a href="./booking.html">Book Now</a>
             <a href="./about-us.html">About us</a>
-        </nav> 
+            <a href="./add-farm.html">Add Cottage</a>
+            <a id="navBook" href="./booking.html">Book Now</a>
+        </nav>
     </header>
-    <hr>
-   
-        <main>
-            
-
-                      
-                    <div id='bookForm'>
-                        <form action="booking.html" id="customerData">
-                        <fieldset>
-               
-                          
-       
-                               <label for="categouryPlace">You Are Looking In:</label>
-   
-                               
-                               <select name="categouryPlace" id="categouryPlace">
-                               
+    <main>
+        <div id='bookForm'>
+            <form action="booking.html" id="customerData">
+                <fieldset id="formField">
+                    <label for="categouryPlace">You Are Looking In:</label>
+                    <br>
+                    <select name="categouryPlace" id="categouryPlace">
                                    <option value="NoPlaceCategoury">-Please choose Your City-</option>
                                    <option value="Amman" >Amman</option>
                                    <option value="Salt" >Salt</option>
                                    <option value="Irbid" >Irbid</option>
-                                   <option value="Jerash" >Jerash</option>
-   
+                                   <option value="Jerash" >Jerash</option>   
                                </select>
-   
-                               
-                               <label for="categouryPpl">For How Many People:</label>
-                               
-                               <select name="categouryPpl" id="categouryPpl">
+                    <br>
+                    <br>
+                    <label for="categouryPpl">For How Many People:</label>
+                    <br>
+                    <select name="categouryPpl" id="categouryPpl">
                                    <option value="NoCategoury">-Please Choose How many People-</option>
                                    <option value="1-9" required>1-9</option>
                                    <option value="10-19" required>10-19</option>
                                    <option value="20-50" required>20-50</option>
-       
-                               
-                               </select>
-                           
-                               <input id="submit" value="Get Cottages" type="submit">
-   
-                           </fieldset>
-                       </form>
-                   </div>
-              
-                   
-                   <section id='result'>
-                       
-                   </section>
-                   
-                   <hr>
-             </div>  
-        </main>
-   
+                              </select>
+                    <br>
+                    <br>
+                    <input id="submit" value="Get Cottages" type="submit">
+                </fieldset>
+            </form>
+        </div>
+        <section id='result'>
+        </section>
+        <hr>
+        </div>
+    </main>
     <footer>
         <div id="social-contact">
             <i class="fab fa-facebook-square"></i>
             <i class="fab fa-instagram"></i>
             <i class="fab fa-twitter"></i>
         </div>
+        <p>All Rights reserved &copy;</p>
     </footer>
     <script src="./js/booking.js"></script>
-    <script src="./js/savedata.js"></script>
-    <script src="./js/rate.js"></script>
-  
-    <script src="./js/extraImg.js"></script>
-
+    <!-- <script src="./js/savedata.js"></script> -->
+    <!-- <script src="./js/rate.js"></script> -->
+    <!-- <script src="./js/extraImg.js"></script> -->
     <script src="https://kit.fontawesome.com/9e5d1913ca.js" crossorigin="anonymous"></script>
 
-   
+
 
 </body>
 

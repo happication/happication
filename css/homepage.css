@@ -194,6 +194,10 @@ footer {
     cursor: pointer;
 }
 
+.divTxt:nth-child(4) {
+    color: red;
+}
+
 .bPhoto {
     position: relative;
     height: 655px;
