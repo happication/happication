@@ -129,6 +129,15 @@ button {
     border-radius: 3px;
 }
 
+.moreImg {
+    /* position: relative; */
+    display: none;
+}
+
+.moreImg img {
+    width: 300px;
+}
+
 footer {
     text-align: center;
     margin-top: 30px;
@@ -142,11 +151,9 @@ footer {
     padding: 0px 10px;
 }
 
-
-
-
 #social-contact i:hover {
     cursor: pointer;
+
 
 }
 
@@ -164,4 +171,5 @@ footer {
 .stars a.active:before,
 .stars a.active ~ a:before {
     color: rgba(252, 154, 6, 0.747);
+
 }
