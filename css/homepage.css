@@ -7,6 +7,7 @@ body {
     /* background-image: url('./img/slidesPics/5-edit.jpg'); */
     /* background-position: center; */
     /* background-size: cover; */
+    height: 100vh;
 }
 
 .content {
@@ -200,7 +201,7 @@ footer {
 
 .bPhoto {
     position: relative;
-    height: 655px;
+    height: 100vh;
     width: 100%;
     z-index: -10;
     display: none;

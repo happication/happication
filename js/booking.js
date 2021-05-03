@@ -26,11 +26,11 @@ let v1 = ["./img/Dream/1 (7).jpg", "./img/Dream/1 (14).jpg", "./img/Dream/1 (4).
 
 let v2 = ["./img/Eva Farm/1 (5).jpg", "./img/Eva Farm/1 (6).jpg", "./img/Eva Farm/1 (7).jpg"];
 
-let v3 = ["./img/Byblos/1 (2).jpg", "./img/Byblos/1 (4).jpg", "./img/Byblos/1 (5).jpg"];
+let v3 = ["./img/Deer/1 (5).jpg", "./img/Deer/1 (6).jpg", "./img/Deer/1 (7).jpg"];
 
 let v4 = ["./img/bird/1 (1).jpg", "./img/bird/1 (5).jpg", "./img/bird/1 (4).jpg"];
 
-let v5 = ["./img/Deer/1 (5).jpg", "./img/Deer/1 (6).jpg", "./img/Deer/1 (7).jpg"];
+let v5 = ["./img/Byblos/1 (2).jpg", "./img/Byblos/1 (4).jpg", "./img/Byblos/1 (5).jpg"];
 
 const allCottageExtraImg = [v1, v2, v3, v4, v5];
 
