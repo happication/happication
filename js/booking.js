@@ -14,25 +14,56 @@ function Save(name, path, ) {
     all.push(this);
 }
 
-const cottageName = ['DREAM VILLA', 'EVA VILLA', 'DEER VILLA', 'BIRD VILLA', 'BYBLOS VILLA', 'FARAH VILLA', 'HAWAII VILLA', 'MARIAM VILLA', 'MOUNTAIN VILLA', 'PHILADELPHIA VILLA', 'SKY VILLAGE VILLA', 'SWITCH VILLA', 'TERESA CHALET VILLA', 'ZAID VIILA', 'ADAM VILLA', 'PARADISE VILLA', 'SAWA VILLA', 'WINGS VILLA', 'YAFA VILLA', 'YALLA VILLA', 'LILIAN VILLA', 'YOLO VILLA'];
-const cottageLocation = ['Amman', 'Amman', 'Amman', 'Amman', 'Amman', 'Amman', 'Salt', 'Salt', 'Salt', 'Salt', 'Salt', 'Salt', 'Irbid', , 'Irbid', 'Irbid', 'Irbid', 'Irbid', 'Jerash', 'Jerash', 'Jerash', 'Jerash'];
-const cottageDesq = ['barbecue, children Swimming pool, Play Station, WIFI.', 'Heated swimming pool, children Swimming pool, Jacuzzi, Air-conditioned rooms ', 'DJ, barbecue, Heated swimming pool.', 'barbecue, football stadium, Children play area.', 'barbecue, Heated swimming pool, Sun loungers, children Swimming pool, Children play area.', 'barbecue, children Swimming pool, table tennis, External headphones.', 'Heated swimming pool, Sun loungers, table tennis, Play Station, WIFI, External headphones,barbecue.', 'barbecue, children Swimming pool, Air-conditioned rooms, Jacuzzi, Children play area, DJ,Sun loungers, Play Station,WIFI.', 'barbecue, Children play area, DJ, football stadium, Heated swimming pool, Sun loungers,table tennis, Play Station, WIFI.', 'barbecue, Heated swimming pool, Play Station.', 'barbecue, Sun loungers, WIFI, External headphones‏.', 'barbecue, children Swimming pool, Air-conditioned rooms, Jacuzzi, Children play area, Sunloungers, table tennis, Play Station.', 'barbecue, children Swimming pool, Air-conditioned rooms, Jacuzzi, Children play area, Play Station', 'barbecue, DJ, Heated swimming pool, External headphones‏, Heated swimming pool, Sun loungers.', 'Sun loungers, Air-conditioned rooms, WIFI, barbecue, table tennis, DJ, Play Station,External headphones', 'children Swimming pool, Sun loungers, Air-conditioned rooms, barbecue, Play Station, WIFI, External headphones, DJ, Billiard, Jacuzzi, table tennis ', 'Air-conditioned rooms, DJ, WIFI, barbecue, Play Station, External headphones, Children play area, Sun loungers', 'Air-conditioned rooms,barbecue, Children play area, DJ, Heated swimming pool, Sun loungers, table tennis, Play Station, WIFI, External headphones', 'Air-conditioned rooms,barbecue, Jacuzzi, Children play area, DJ, Sun loungers, Heated swimming pool, Play Station, WIFI, External headphones', 'External headphones, barbecue, Air-conditioned rooms, Sun loungers,DJ, WIFI,', 'External headphones, barbecue, Air-conditioned rooms, Sun loungers,DJ, WIFI', 'Air-conditioned rooms, DJ, WIFI, barbecue, Play Station, External headphones, Childrens ,play area, Sun loungers'];
-const cottageImg = ['./img/Dream/thum.jpg', './img/Eva Farm/thum.jpg', './img/Deer/thum.jpg', './img/bird/thum.jpg', './img/Byblos/thum.jpg', './img/Farah/thum.jpg', './img/Hawaii/thum.jpg', './img/Mariam/thum.jpeg', './img/mountain/thum.jpg', './img/Philadelphia/thum.jpg', './img/Sky village/thum.jpg', './img/Switch Villa/thum.jpg', './img/Teresa Chalet/thum.jpeg', './img/Zaid/thum.jpg', './img/adam/thum.jpg', './img/paradise/thum.jpg', './img/sawa /thum.jpg', './img/wings/thum.jpg', './img/yafa/thum.jpg', './img/yalla/thum.jpg', './img/adam/7.jpg', './img/Teresa Chalet/1 (5).jpeg'];
-const cottageCapacity = ['1-9', '1-9', '10-19', '10-19', '20-50', '20-50', '1-9', '1-9', '10-19', '10-19', '20-50', '20-50', '1-9', '1-9', '10-19', '10-19', '20-50', '20-50', '10-19', '1-9', '1-9', '10-19'];
-const cottagePrice = ['150 JD per day', '170 JD per day', '100 JD Per day', '150 JD Per day', '130 JD per day', '200 JD Per day', '170 JD per day', '220 JD per day.', '190 JD per day', '110 JD per day.', '130 JD Per day.', '160 JD Per day.', '170 JD per day', '110 JD per day.', '120 Jd Per day', '150 Jd Per day', '110 Jd Per day', '130 Jd Per day', '150 Jd Per day', '100 Jd Per day', '130 JD Per day.', '150 JD Per day'];
+const cottageName = ['DREAM VILLA', 'EVA VILLA', 'DEER VILLA', 'BIRD VILLA', 'BYBLOS VILLA', 'FARAH VILLA', 'HAWAII VILLA', 'MARIAM VILLA', 'MOUNTAIN VILLA', 'PHILADELPHIA VILLA', 'SKY VILLAGE VILLA', 'SWITCH VILLA', 'TERESA CHALET VILLA', 'ZAID VIILA', 'ADAM VILLA', 'PARADISE VILLA', 'SAWA VILLA', 'WINGS VILLA', 'YAFA VILLA', 'YALLA VILLA'];
+const cottageLocation = ['Amman', 'Amman', 'Amman', 'Amman', 'Amman', 'Salt', 'Salt', 'Salt', 'Salt', 'Salt', 'Irbid', 'Irbid', 'Irbid', 'Irbid', 'Irbid', 'Jerash', 'Jerash', 'Jerash', 'Jerash','Jerash'];
+const cottageDesq = ['Heated swimming pool, children Swimming pool, Jacuzzi, Air-conditioned rooms ','barbecue, football stadium, Children play area.', 'barbecue, Heated swimming pool, Sun loungers, children Swimming pool, Children play area.', 'barbecue, children Swimming pool, table tennis, External headphones.', 'Heated swimming pool, Sun loungers, table tennis, Play Station, WIFI, External headphones,barbecue.', 'barbecue, children Swimming pool, Air-conditioned rooms, Jacuzzi, Children play area, DJ,Sun loungers, Play Station,WIFI.', 'barbecue, Children play area, DJ, football stadium, Heated swimming pool, Sun loungers,table tennis, Play Station, WIFI.', 'barbecue, Heated swimming pool, Play Station.', 'barbecue, Sun loungers, WIFI, External headphones‏.', 'barbecue, children Swimming pool, Air-conditioned rooms, Jacuzzi, Children play area, Sunloungers, table tennis, Play Station.', 'barbecue, children Swimming pool, Air-conditioned rooms, Jacuzzi, Children play area, Play Station', 'barbecue, DJ, Heated swimming pool, External headphones‏, Heated swimming pool, Sun loungers.', 'Sun loungers, Air-conditioned rooms, WIFI, barbecue, table tennis, DJ, Play Station,External headphones', 'children Swimming pool, Sun loungers, Air-conditioned rooms, barbecue, Play Station, WIFI, External headphones, DJ, Billiard, Jacuzzi, table tennis ', 'Air-conditioned rooms, DJ, WIFI, barbecue, Play Station, External headphones, Children play area, Sun loungers', 'Air-conditioned rooms,barbecue, Children play area, DJ, Heated swimming pool, Sun loungers, table tennis, Play Station, WIFI, External headphones', 'Air-conditioned rooms,barbecue, Jacuzzi, Children play area, DJ, Sun loungers, Heated swimming pool, Play Station, WIFI, External headphones', 'External headphones, barbecue, Air-conditioned rooms, Sun loungers,DJ, WIFI,', 'External headphones, barbecue, Air-conditioned rooms, Sun loungers,DJ, WIFI', 'Air-conditioned rooms, DJ, WIFI, barbecue, Play Station, External headphones, Childrens ,play area, Sun loungers'];
+const cottageImg = ['./img/Dream/thum.jpg', './img/Eva Farm/thum.jpg', './img/Deer/thum.jpg', './img/bird/thum.jpg', './img/Byblos/thum.jpg', './img/Farah/thum.jpg', './img/Hawaii/thum.jpg', './img/Mariam/thum.jpeg', './img/mountain/thum.jpg', './img/Philadelphia/thum.jpg', './img/Sky village/thum.jpg', './img/Switch Villa/thum.jpg', './img/Teresa Chalet/thum.jpeg', './img/Zaid/thum.jpg', './img/adam/thum.jpg', './img/paradise/thum.jpg', './img/sawa /thum.jpg', './img/wings/thum.jpg', './img/yafa/thum.jpg', './img/yalla/thum.jpg'];
+const cottageCapacity = ['1-9', '1-9', '10-19', '10-19', '20-50', '20-50', '1-9', '1-9', '10-19', '10-19', '20-50', '20-50', '1-9', '1-9', '10-19', '10-19', '20-50', '20-50', '10-19', '1-9'];
+const cottagePrice = ['150 JD per day', '170 JD per day', '100 JD Per day', '150 JD Per day', '130 JD per day', '200 JD Per day', '170 JD per day', '220 JD per day.', '190 JD per day', '110 JD per day.', '130 JD Per day.', '160 JD Per day.', '170 JD per day', '110 JD per day.', '120 Jd Per day', '150 Jd Per day', '110 Jd Per day', '130 Jd Per day', '150 Jd Per day', '100 Jd Per day'];
 /////////////////////////////////////////////////////
 
 let v1 = ["./img/Dream/1 (7).jpg", "./img/Dream/1 (14).jpg", "./img/Dream/1 (4).jpg"];
 
 let v2 = ["./img/Eva Farm/1 (5).jpg", "./img/Eva Farm/1 (6).jpg", "./img/Eva Farm/1 (7).jpg"];
 
-let v3 = ["./img/Byblos/1 (2).jpg", "./img/Byblos/1 (4).jpg", "./img/Byblos/1 (5).jpg"];
+let v3 = ["./img/Deer/1 (5).jpg", "./img/Deer/1 (6).jpg", "./img/Deer/1 (7).jpg"];
 
 let v4 = ["./img/bird/1 (1).jpg", "./img/bird/1 (5).jpg", "./img/bird/1 (4).jpg"];
 
-let v5 = ["./img/Deer/1 (5).jpg", "./img/Deer/1 (6).jpg", "./img/Deer/1 (7).jpg"];
+let v5 = ["./img/Byblos/1 (2).jpg", "./img/Byblos/1 (4).jpg", "./img/Byblos/1 (5).jpg"];
 
-const allCottageExtraImg = [v1, v2, v3, v4, v5];
+let v6 = ["./img/Farah/1 (1).jpg", "./img/Farah/1 (4).jpg","./img/Farah/1 (7).jpg"];
+
+let v7 = ["./img/Hawaii/1 (2).jpg", "./img/Hawaii/1 (4).jpg","./img/Hawaii/1 (12).jpg"];
+
+let v8 = ["./img/Mariam/1 (3).jpg", "./img/Mariam/1 (3).jpeg","./img/Mariam/1 (4).jpg"];
+
+let v9 = ["./img/mountain/1 (1).jpg", "./img/mountain/1 (4).jpg","./img/mountain/1 (5).jpg"];
+
+let v10 = ["./img/Philadelphia/1 (1).jpg", "./img/Philadelphia/1 (2).jpg","./img/Philadelphia/1 (4).jpg"];
+
+let v11 = ["./img/Sky village/1 (3).jpg","./img/Sky village/1 (4).jpg","./img/Sky village/1 (7).jpg"];
+
+let v12 = ["./img/Switch Villa/1 (1).jpg","./img/Switch Villa/1 (3).jpg","./img/Switch Villa/1 (4).jpg"];
+
+let v13 = ["./img/Teresa Chalet/1 (4).jpeg", "./img/Teresa Chalet/1 (5).jpeg","./img/Teresa Chalet/1 (9).jpeg"];
+
+let v14 = ["./img/Zaid/1 (5).jpg", "./img/Zaid/1 (7).jpg" ,"./img/Zaid/1 (1).jpg"];
+
+let v15 = ["./img/adam/1.jpg","./img/adam/3.jpg","./img/adam/4.jpg"];
+
+let v16 = ["./img/paradise/3.jpg", "./img/paradise/7.jpg","./img/paradise/9.jpg"];
+
+let v17 = ["./img/sawa /1.jpg", "./img/sawa /5.jpg","./img/sawa /7.jpg"];
+
+let v18 = ["./img/wings/1.jpg", "./img/wings/4.jpg","./img/wings/7.jpg"];
+
+let v19 = ["./img/yafa/1.jpg", "./img/yafa/3.jpg","./img/yafa/4.jpg"];
+
+let v20 = ["./img/yalla/1.jpg", "./img/yalla/2.jpg","./img/yalla/3.jpg"];
+
+
+const allCottageExtraImg = [v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15, v16, v17, v18, v19, v20];
 
 // console.log(cottageExtraImg);
 
