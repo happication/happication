@@ -1,8 +1,11 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap');
 
 *{
     margin: 0%;
 }
+
 
 header {
     display: grid;
@@ -32,7 +35,6 @@ nav {
 
 nav a {
     text-decoration: none;
-    /* color: white; */
     padding: 10px 30px;
     font-size: 18px;
     color: white;
@@ -51,9 +53,6 @@ footer {
     padding-top: 30px;
     color: white;
     margin-bottom: -8px;
-    
-   
-
 }
 
 #social-contact i{
@@ -77,15 +76,12 @@ margin-top: 77px;
 margin-left: 25px;
 height: 470px;
 border-radius: 15PX 15PX 15PX 15PX;
-
 }
 
 main{
 display: grid;
 grid-template-columns: 800px 1fr;
 margin-left: 30px;
-
-
 }
 
 legend {
@@ -93,7 +89,6 @@ legend {
     height: 450px;
     margin: auto;
     border-radius: 15PX 15PX 0PX 0PX;
-    /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTozr6kzz1OKBPD7uXwRuqZ-0y6KQN-5suVYg&usqp=CAU"); */
     color:  #222;
     padding: 10PX 0PX 10PX 0PX;
     text-align: center;
@@ -139,6 +134,8 @@ form{
 
   }
   input[type=submit]:hover{
+
+
    /* background-color: rgb(97, 177, 252); */
    /* box-shadow: */
                  /* 1px 1px #53a7ea, */
@@ -149,11 +146,11 @@ form{
          background-color: grey;
          color:white ;
          
+
   }
   
 main p {
-    margin-left: 25px;
-    
+    margin-left: 25px;   
     position: absolute;
     margin-top: 26px;
     
@@ -206,8 +203,7 @@ input{
     width: 140px;
     margin-top: -160px;
     margin-right: 94px;
-    border: 3px, dashed, blue;
-  
+    border: 3px, dashed, blue; 
 }
 
 body{
