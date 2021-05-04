@@ -205,7 +205,7 @@ for (let i = 0; i < showButton.length; i++) {
 
 function allButtonsShowMore() {
     for (let i = 0; i < showButton.length; i++) {
-        showButton[i].textContent = "Show more"
+        showButton[i].textContent = "SHOW MORE"
     }
 }
 // // add listener function
@@ -221,7 +221,7 @@ function render(event) {
         }
         allButtonsShowMore()
         document.getElementById(event.target.id + "-extra").style.display = 'grid';
-        event.target.textContent = "Show less"
+        event.target.textContent = "SHOW LESS"
     }
 }
 
@@ -284,7 +284,7 @@ function handleCustomerSubmit(event) {
 
     function allButtonsShowMore() {
         for (let i = 0; i < showButton.length; i++) {
-            showButton[i].textContent = "Show more"
+            showButton[i].textContent = "SHOW MORE"
         }
     }
     // // add listener function
@@ -300,7 +300,7 @@ function handleCustomerSubmit(event) {
             }
             allButtonsShowMore()
             document.getElementById(event.target.id + "-extra").style.display = 'grid';
-            event.target.textContent = "Show less"
+            event.target.textContent = "SHOW LESS"
         }
     }
 
