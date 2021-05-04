@@ -45,17 +45,14 @@ nav a:hover {
 }
 
 main {
-    display: grid;
-    grid-template-columns: 300px 1fr;
-    gap: 30px;
+    
+    /* grid-template-columns: 300px 1fr; */
     margin-top: 30px;
-    width: 90%;
+    width: 100%;
     margin: auto;
 }
 
-#formField {
-    border: none;
-}
+
 
 select {
     height: 25px;
@@ -64,31 +61,38 @@ select {
 #submit {
     border: none;
     width: 120px;
-    height: 40px;
+    height: 27px;
     background-color: #3d84b8;
     color: white;
+    margin-left: 30px;
 }
 
 #submit:hover {
     background-color: black;
 }
 
+
+
+
 #bookForm {
-    border-right: 1px solid gray;
+    border-right: 0.5px solid rgb(30, 2, 133);
+    position: relative;
+    display: inline ;
+    clear: both;
 }
 
 .location {
-    border-bottom: 1px solid #3d84b8;
+    border: 0.50px solid #3d84b8;
     padding: 5px;
     margin-bottom: 20px;
     display: grid;
-    grid-template-columns: 250px 1fr;
-    gap: 30px;
+    grid-template-columns: 350px 1fr;
+    gap: 40px;
 }
 
 .divImg img {
-    width: 100%;
-    height: 100%;
+    width: 350px;
+    height: 350px;
     object-fit: cover;
 }
 
@@ -107,7 +111,7 @@ h2 {
     margin-bottom: 0px;
 }
 
-.divTxt p:nth-child(4) {
+.divTxt p:nth-child(5) {
     color: red;
     font-weight: bold;
     margin-top: 10px;
@@ -132,10 +136,16 @@ button {
 .moreImg {
     /* position: relative; */
     display: none;
+  
 }
 
 .moreImg img {
+    padding: 20px;
     width: 300px;
+    height: 250px;
+    border-radius: 35px;
+    box-shadow: 0.2px 0.2px  rgba(128, 128, 128, 0.411);
+
 }
 
 footer {
@@ -153,8 +163,6 @@ footer {
 
 #social-contact i:hover {
     cursor: pointer;
-
-
 }
 
 .stars a:before {
@@ -167,9 +175,29 @@ footer {
 }
 
 .stars a:hover:before,
-.stars a:hover ~ a:before,
+.stars a:hover~a:before,
 .stars a.active:before,
-.stars a.active ~ a:before {
+.stars a.active~a:before {
     color: rgba(252, 154, 6, 0.747);
+}
 
+.filtertop{
+    margin-left: 20px;
+}
+.filtertop2{
+    margin-left: 20px;
+}
+
+hr{
+    margin-top: 50px;
+
+}
+#categouryPlace{
+    width: 270px;
+    text-align: center;
+}
+
+.showBtn{
+    margin-top: 60px;
+    position: relative;
 }

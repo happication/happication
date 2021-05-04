@@ -20,35 +20,34 @@
         </nav>
     </header>
     <main>
+        <center>
         <div id='bookForm'>
             <form action="booking.html" id="customerData">
                 <fieldset id="formField">
-                    <label for="categouryPlace">You Are Looking In:</label>
-                    <br>
+                    <label for="categouryPlace"  class="filtertop">You Are Looking In:</label>
+                    
                 
                     <select name="categouryPlace" id="categouryPlace">
-                                   <option value="NoPlaceCategoury">-Please choose Your City-</option>
+                                   <option value="NoPlaceCategoury" id='categouryPlace'>----------Please Choose Your City----------</option>
                                    <option value="Amman" >Amman</option>
                                    <option value="Salt" >Salt</option>
                                    <option value="Irbid" >Irbid</option>
                                    <option value="Jerash" >Jerash</option>   
                                </select>
-                    <br>
-                    <br>
-                    <label for="categouryPpl">For How Many People:</label>
-                    <br>
-                    <select name="categouryPpl" id="categouryPpl">
+
+                               <label for="categouryPpl" class="filtertop2">For How Many People:</label>                    
+                               <select name="categouryPpl" id="categouryPpl">
                                    <option value="NoCategoury">-Please Choose How many People-</option>
                                    <option value="1-9" required>1-9</option>
                                    <option value="10-19" required>10-19</option>
                                    <option value="20-50" required>20-50</option>
-                              </select>
-                    <br>
-                    <br>
+                              </select>   
+                                              
                     <input id="submit" value="Get Cottages" type="submit">
                 </fieldset>
             </form>
         </div>
+    </center>
         <section id='result'>
         </section>
         <hr>
