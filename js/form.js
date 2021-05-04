@@ -14,6 +14,7 @@ let span = document.getElementById("close");
 btn.onsubmit = function (e) {
     e.preventDefault();
     modal.style.display = "block";
+    btn.reset();
 }
 
 
