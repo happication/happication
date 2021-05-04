@@ -151,7 +151,7 @@ button {
     cursor: pointer;
     /* font-family: 'Original Surfer', cursive; */
     background: none;
-    color: aliceblue;
+    /* color: aliceblue; */
     font-size: 30px;
     text-align: center;
 }
@@ -164,7 +164,6 @@ button {
     font-size: 18px;
     margin-left: 40px;
     background-color: white;
-    color: #3d84b8;
 }
 
 #leftButton {
@@ -186,9 +185,19 @@ button:hover {
     color: white;
 }
 
+#rightButton a {
+    text-decoration: none;
+    color: #3d84b8;
+}
+
+#leftButton a {
+    text-decoration: none;
+    color: white;
+}
+
 footer {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 #social-contact i {
