@@ -7,7 +7,9 @@ body{
     grid-template-rows: 100px 1fr 100px;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-    height: 100%;
+    /* background-color: rgb(255, 255, 255); */
+    background-image: url(https://static9.depositphotos.com/1280399/1142/i/950/depositphotos_11423165-stock-photo-old-white-paper-texture-as.jpg);
+    background-size: cover;
 }
 
 header {
@@ -37,7 +39,6 @@ nav {
 
 nav a {
     text-decoration: none;
-    /* color: white; */
     padding: 10px 30px;
     font-size: 18px;
     color: white;
@@ -48,67 +49,50 @@ nav a:hover {
     cursor: pointer;
 }
 
-#title h1{
-    text-align: center;
-    font-size: 40px;
-    font-family: 'Open Sans', sans-serif;
-    color: #3d84b8;
-    padding-top: 50px;
-}
-
-main {
-    height: 900px;
-    display: grid;
-    grid-template-rows: 100px 1fr ;
-}
-
-
 main img {
-    width: 250px;
-    height: 300px;
+    width: 400px;
+    height: 450px;
+    
+}
+
+main a {
+    color: black;
+    padding: 5px;
 }
 
 .us {
+    padding-top: 30px;
     display: grid;
-    grid-template-columns: repeat(5,1fr);
-    margin-right: auto;
-    margin-left: auto;
-    gap: 100px;
-    padding-top: 100px;
-}
-
-
-.name {
-    height: min-content;
+    grid-template-rows: repeat(2,1fr);
     text-align: center;
-    font-weight: bold;
 }
 
-.student p:nth-child(2){
-    color: gray;
+.up{
+    display: flex;
+    margin: auto;
+    gap: 200px;
+}
+
+.down {
+    padding-top: 30px;
+    display: flex;
+    margin: auto;
+    gap: 200px;
 }
 
 .student {
-    text-align: center;
-    width: 250px;
+    border: 1px solid black;
+    background-color: rgb(218, 218, 218);
+    height: 580px;
 }
 
-#detailsButton{
-    text-align: center;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 30px;
-    color: black;
-    padding-top: 150px;
-    animation-name: moving;
-    animation-duration: 1s;
-}
-@keyframes moving {
-    from {padding-top: 0px;}
-    to {padding-top: 150px;}
-  }
 
-  footer {
+
+.info:hover{
+    opacity: 1;
+}
+
+footer {
     text-align: center;
     margin-top: 30px;
     background-color: #3d84b8;
@@ -123,5 +107,4 @@ main img {
 
 #social-contact i:hover {
     cursor: pointer;
-
-}
+} 

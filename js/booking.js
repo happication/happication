@@ -22,6 +22,7 @@ const cottageCapacity = ['1-9', '1-9', '10-19', '10-19', '20-50', '20-50', '1-9'
 const cottagePrice = ['150 JD per day', '170 JD per day', '100 JD Per day', '150 JD Per day', '130 JD per day', '200 JD Per day', '170 JD per day', '220 JD per day.', '190 JD per day', '110 JD per day.', '130 JD Per day.', '160 JD Per day.', '170 JD per day', '110 JD per day.', '120 Jd Per day', '150 Jd Per day', '110 Jd Per day', '130 Jd Per day', '150 Jd Per day', '100 Jd Per day'];
 /////////////////////////////////////////////////////
 
+
 let v1 = ["./img/Dream/1 (7).jpg", "./img/Dream/1 (14).jpg", "./img/Dream/1 (4).jpg"];
 
 let v2 = ["./img/Eva Farm/1 (5).jpg", "./img/Eva Farm/1 (6).jpg", "./img/Eva Farm/1 (7).jpg"];
@@ -70,6 +71,7 @@ const allCottageExtraImg = [v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v
 //////////////////////////////////////////////////
 
 function Cottages(name, cities, description, image, price, capacity, extraImg) {
+
     this.cottageName = name;
     this.cottageLocation = cities;
     this.cottageDesq = description;
@@ -93,6 +95,7 @@ Cottages.prototype.inject = function(cottage) {
     let locationImage = document.createElement('img');
     let textContainer = document.createElement('div');
     let description = document.createElement('p');
+    let starsDiv=document.createElement('div');
     let price = document.createElement('p');
     let capacity = document.createElement('p');
     let reserveBtn = document.createElement('button');
@@ -100,20 +103,36 @@ Cottages.prototype.inject = function(cottage) {
     let filterLOcation = document.createElement('p');
     let showImgContainer = document.createElement('div');
 
-
-
     result.appendChild(locationContainer);
     textContainer.appendChild(heading);
     locationContainer.appendChild(imgContainer);
     imgContainer.appendChild(locationImage);
     locationContainer.appendChild(textContainer);
     textContainer.appendChild(filterLOcation);
-    textContainer.appendChild(description);
+    textContainer.appendChild(description);  
     textContainer.appendChild(price);
     textContainer.appendChild(capacity);
     textContainer.appendChild(reserveBtn);
     textContainer.appendChild(showImg);
     locationContainer.appendChild(showImgContainer);
+   
+    starsDiv.className='stars';
+textContainer.appendChild(starsDiv);
+  
+let firstStar=document.createElement('a');
+let secondStar=document.createElement('a');
+let thirdStar=document.createElement('a');
+let fourthStar=document.createElement('a');
+let fifthhStar=document.createElement('a');
+
+starsDiv.appendChild(firstStar);
+starsDiv.appendChild(secondStar);
+starsDiv.appendChild(thirdStar);
+starsDiv.appendChild(fourthStar);
+starsDiv.appendChild(fifthhStar);
+
+
+
 
 
 
@@ -130,13 +149,20 @@ Cottages.prototype.inject = function(cottage) {
 
 
     locationImage.src = cottage.cottageImg;
+    firstStar.textContent='';
+    secondStar.textContent='';
+    thirdStar.textContent='';
+    fourthStar.textContent='';
+    fifthhStar.textContent='';
+
     filterLOcation.textContent = 'LOCATION: ' + cottage.cottageLocation;
-    heading.textContent = cottage.cottageName;
+    heading.textContent = cottage.cottageName ;
     description.textContent = cottage.cottageDesq;
     price.textContent = 'Price: ' + cottage.cottagePrice;
     reserveBtn.textContent = 'BOOK NOW!';
     showImg.textContent = 'SHOW MORE';
     capacity.textContent = 'Capacity: ' + cottage.cottageCapacity;
+
 
 
     if (cottage.cottageExtraImg) {
@@ -147,6 +173,12 @@ Cottages.prototype.inject = function(cottage) {
             addExtraImg.src = cottage.cottageExtraImg[i]
         }
     }
+
+    $('.stars a').on('click', function(){
+      $('.stars a').removeClass('active');
+      $(this).addClass('active');
+    });
+
 }
 
 
@@ -205,18 +237,23 @@ function handleCustomerSubmit(event) {
     let filter = JSON.parse(localStorage.getItem('keyf'))
     console.log(filter);
 
-    for (let i = 0; i < filter.length; i++) {
-
-        booknow[i].onclick = function() {
-            all.shift();
-            let render = new Save(filter[i].name, filter[i].path)
-            localStorage.setItem('key', JSON.stringify(all));
-
-            window.open("./form.html");
-        }
+ 
 
 
-    }
+for (let i =0 ; i<filter.length;i++){
+
+  booknow[i].onclick = function () {
+    all.shift();
+    all.shift();
+    let render = new Save(filter[i].name, filter[i].path)
+    localStorage.setItem('key', JSON.stringify(all));
+   
+    window.open("./form.html");
+  }
+
+
+
+}
 
 }
 
