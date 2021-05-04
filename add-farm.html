@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "icon" href = 
-"https://image.freepik.com/free-vector/playful-vacation-logo-design-beach-palm-sunset_71835-229.jpg" type = "image/x-icon" sizes="128×128">
+    <link rel="icon"
+        href="https://image.freepik.com/free-vector/playful-vacation-logo-design-beach-palm-sunset_71835-229.jpg"
+        type="image/x-icon" sizes="128×128">
     <title>Happication</title>
-    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/modal.css">
     <link rel="stylesheet" href="./css/formAddCottage.css">
 </head>
+
 <body>
     <header>
         <img id="logo" src="./img/logo.png" alt="logo">
@@ -20,49 +23,61 @@
             <a id="navBook" href="./booking.html">Book Now</a>
         </nav>
     </header>
-    
+
     <main>
         <div>
             <fieldset id="addformContainer">
                 <legend>Adding Cottage Request</legend>
                 <form id="addcottage" autocomplete="off">
-                    <label for="owner">Owner's name</label>
-                    <input type="text" id="owner" required/><br>
+                    <section  >
 
-                    <label for="contact">Phone Number</label>
-                    <input type="tel" id="contact" placeholder="07" pattern=".{10,}" required/><br>
+                        <label for="owner">Owner's name</label>
+                        <input type="text" id="owner" required />
 
-                    <label for="name">Cottage's Name</label>
-                     <input type="text" id="name"><br>
-                    <div class="right">
-                        
-                        <label id="location" for="location" >Cottage's Location</label>
-                        <input type="text" id="location" list="governorates" required/>
-                         <datalist id="governorates">
-                             <option value="Amman"></option>
-                             <option value="Irbid"></option>
-                             <option value="Zarqa"></option>
-                             <option value="Mafraq"></option>
-                             <option value="Ajloun"></option>
-                             <option value="Jerash"></option>
-                             <option value="Madaba"></option>
+                        <label for="contact" class="gapphone">Phone Number</label>
+                        <input type="tel" id="contact" placeholder="07" pattern=".{10,}" required />
+
+
+
+                    </section>
+
+                    <section class="owne">
+                        <label for="name" >Cottage's name</label>
+                        <input type="text" id="name">
+
+                        <label for="location" class="cottage">Cottage's Location</label>
+                        <input type="text" id="location" list="governorates" required />
+                    </section>
+
+                    <datalist id="governorates">
+                        <option value="Amman"></option>
+                        <option value="Irbid"></option>
+                        <option value="Zarqa"></option>
+                        <option value="Mafraq"></option>
+                        <option value="Ajloun"></option>
+                        <option value="Jerash"></option>
+                        <option value="Madaba"></option>
+
                         <option value="Balqa"></option>
                         <option value="Karak"></option>
                         <option value="Tafileh"></option>
                         <option value="Ma'an"></option>
                         <option value="Aqaba"></option>
-                            </datalist>
-                         <br>
-                    
-                         <label for="price" class="right">Price Per Night</label>
-                         <input type="number" id="price" step="10" value="10 " required placeholder="JOD" /><br>
-                    </div>
+
+                    </datalist>
+                    <br>
+
+                    <label for="price" class="pric">Price Per Night</label>
+                    <input type="number" id="price" step="10" min="0" placeholder="JOD" required /><br>
+
                     <label for="description">Description</label><br>
-                    <textarea id="description" cols="100" rows="10" placeholder="Describe your cottage, what do you have there !! "></textarea><br>
-                    
-                    <input type="checkbox" id="terms" required/>
-                    <label id="agree" for="terms">I agree to the<a href="">Terms Of Service</a></label><br>
-                     
+                    <textarea id="description" cols="100" rows="10"
+                        placeholder="Describe your cottage, what do you have there !! "></textarea><br>
+
+                    <input type="checkbox" id="terms" required />
+                    <label id="agree" for="terms">I agree to the<a class="terms" href="">Terms Of Service</a></label><br>
+
+
                     <input id="submit" type="submit" value="Add New Cottage">
                 </form>
             </fieldset>
@@ -71,20 +86,21 @@
         <div id="myModal" class="modal">
             <div class="modal-content">
                 <div class="model-header">
-                    <h2> happication </h2> 
+                    <h2> happication </h2>
                 </div>
                 <div class="model-body">
                     <p>We thank you for choosing happication.
-                         We look forward to working together.
-                          The specialized team will contact you for more details</p>
+                        We look forward to working together.
+                        The specialized team will contact you for more details</p>
                 </div>
-                <div class="model-footer"> 
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqsvxI-cGsF7dSoYBmfQ3ufH76ekG7d9FZTA&usqp=CAU" alt=""> <span id="close" class="close">Close</span>
+                <div class="model-footer">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqsvxI-cGsF7dSoYBmfQ3ufH76ekG7d9FZTA&usqp=CAU"
+                        alt=""> <span id="close" class="close">Close</span>
                 </div>
             </div>
         </div>
     </main>
-    
+
     <footer>
         <div id="social-contact">
             <i class="fab fa-facebook-square"></i>
@@ -98,4 +114,5 @@
     <script src="https://kit.fontawesome.com/9e5d1913ca.js" crossorigin="anonymous"></script>
 
 </body>
+
 </html>
