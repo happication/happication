@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap');
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0px;
+    /* background-color: rgba(255, 223, 107, .8); */
 }
 
 header {
@@ -45,64 +48,92 @@ nav a:hover {
 }
 
 main {
-    
     /* grid-template-columns: 300px 1fr; */
     margin-top: 30px;
-    width: 100%;
+    width: 85%;
     margin: auto;
 }
 
+#formField {
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 2fr;
+    margin-bottom: 20px;
+    background: #eee;
+    border: none;
+    border-bottom: 2px solid #999b84;
+}
 
+#gideForm {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 20px;
+}
 
 select {
     height: 25px;
+    margin-top: 5px;
 }
 
 #submit {
     border: none;
-    width: 120px;
-    height: 27px;
+    width: 200px;
+    height: 35px;
+    margin: auto;
     background-color: #3d84b8;
+    /* background-color: #fdcb40e0; */
     color: white;
-    margin-left: 30px;
+    margin-bottom: 10px;
 }
 
 #submit:hover {
-    background-color: black;
+    background-color: #a2b29f;
+    color: black;
 }
 
-
-
-
 #bookForm {
-    border-right: 0.5px solid rgb(30, 2, 133);
+    /* border-right: 0.5px solid rgb(30, 2, 133); */
     position: relative;
-    display: inline ;
+    display: inline;
     clear: both;
+    /* margin-bottom: 30px; */
 }
 
 .location {
-    border: 0.50px solid #3d84b8;
+    /* border: 2px solid #3d84b8; */
+    border-style: outset;
+    /* {border-style: outset;} */
     padding: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     display: grid;
-    grid-template-columns: 350px 1fr;
+    grid-template-columns: 300px 1fr;
     gap: 40px;
+    /* background-color: white; */
+    /* background-color: rgba(255, 223, 107, .8); */
+    background: #eee;
 }
 
 .divImg img {
-    width: 350px;
-    height: 350px;
-    object-fit: cover;
+    width: 300px;
+    height: 270px;
+    border: 3px;
+    border-style: inset;
+    /* object-fit: cover; */
 }
 
 h2 {
-    margin-top: 10px;
+    display: inline-block;
+    margin-top: 0px;
     margin-bottom: 0px;
+    margin-right: 20px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    color: #194350;
 }
 
 .filterLOcation {
-    margin-top: 10px;
+    margin-top: 15px;
     margin-bottom: 0px;
 }
 
@@ -118,34 +149,55 @@ h2 {
     margin-bottom: 0px;
 }
 
-.divTxt p:nth-child(5) {
-    margin-top: 10px;
+.divTxt p:nth-child(6) {
+    margin-top: 5px;
     margin-bottom: 0px;
 }
 
-button {
+#booknow {
     border: none;
     width: 120px;
     height: 40px;
-    background-color: #3d84b8;
-    color: white;
-    margin: 10px 10px;
+    /* background-color: #3d84b8; */
+    background-color: #fdcb40e0;
+    /* color: white; */
     border-radius: 3px;
+    margin: 20px 0px;
+}
+
+.showBtn {
+    border: none;
+    width: 120px;
+    height: 40px;
+    /* background-color: #3d84b8; */
+    /* background-color: #fdcb40e0; */
+    /* color: white; */
+    border-radius: 3px;
+    margin: 20px 10px;
+    border: 2px solid #fdcb40e0;
+}
+
+#booknow:hover {
+    background-color: black;
+    color: white;
+}
+
+.showBtn:hover {
+    border: none;
+    background-color: black;
+    color: white;
 }
 
 .moreImg {
-    /* position: relative; */
     display: none;
-  
+    grid-template-columns: repeat(3, 3fr);
+    gap: 5px;
 }
 
 .moreImg img {
-    padding: 20px;
-    width: 300px;
-    height: 250px;
-    border-radius: 35px;
-    box-shadow: 0.2px 0.2px  rgba(128, 128, 128, 0.411);
-
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0.2px 0.2px rgba(128, 128, 128, 0.411);
 }
 
 footer {
@@ -163,6 +215,11 @@ footer {
 
 #social-contact i:hover {
     cursor: pointer;
+    color: black;
+}
+
+.stars {
+    display: inline-block;
 }
 
 .stars a:before {
@@ -181,23 +238,23 @@ footer {
     color: rgba(252, 154, 6, 0.747);
 }
 
-.filtertop{
-    margin-left: 20px;
-}
-.filtertop2{
-    margin-left: 20px;
+.filtertop {
+    font-size: 4mm;
+    font-weight: 400;
+    margin-bottom: 10px;
 }
 
-hr{
+.filtertop2 {
+    font-size: 4mm;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+hr {
     margin-top: 50px;
-
 }
-#categouryPlace{
+
+#categouryPlace {
     width: 270px;
     text-align: center;
-}
-
-.showBtn{
-    margin-top: 60px;
-    position: relative;
 }
