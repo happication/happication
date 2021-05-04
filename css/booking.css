@@ -75,6 +75,7 @@ select {
 
 #bookForm {
     border-right: 1px solid gray;
+    position: fixed fixed;
 }
 
 .location {

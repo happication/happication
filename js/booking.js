@@ -60,11 +60,11 @@ Cottages.prototype.inject = function(cottage) {
 
     let locationContainer = document.createElement('div');
     let heading = document.createElement('h2');
+    let starsDiv=document.createElement('div');
     let imgContainer = document.createElement('div');
     let locationImage = document.createElement('img');
     let textContainer = document.createElement('div');
     let description = document.createElement('p');
-    let starsDiv=document.createElement('div');
     let price = document.createElement('p');
     let capacity = document.createElement('p');
     let reserveBtn = document.createElement('button');
@@ -77,6 +77,7 @@ Cottages.prototype.inject = function(cottage) {
     locationContainer.appendChild(imgContainer);
     imgContainer.appendChild(locationImage);
     locationContainer.appendChild(textContainer);
+    textContainer.appendChild(starsDiv);
     textContainer.appendChild(filterLOcation);
     textContainer.appendChild(description);  
     textContainer.appendChild(price);
@@ -86,7 +87,6 @@ Cottages.prototype.inject = function(cottage) {
     locationContainer.appendChild(showImgContainer);
    
     starsDiv.className='stars';
-textContainer.appendChild(starsDiv);
   
 let firstStar=document.createElement('a');
 let secondStar=document.createElement('a');
@@ -244,7 +244,15 @@ for (let i = 0; i < locations.length; i++) {
 
 let showButton = document.getElementsByClassName('showBtn');
 let allExtarImg = document.getElementsByClassName('moreImg');
+let form = document.getElementById("customerData");
 
+
+
+form.addEventListener('submit', handleCustomerSubmit);
+
+function handleCustomerSubmit(event) {
+
+    event.preventDefault();
 for (let i = 0; i < showButton.length; i++) {
     showButton[i].addEventListener('click', render);
 }
