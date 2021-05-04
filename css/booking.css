@@ -108,7 +108,7 @@ h2 {
     margin-bottom: 0px;
 }
 
-.divTxt p:nth-child(4) {
+.divTxt p:nth-child(5) {
     color: red;
     font-weight: bold;
     margin-top: 10px;
@@ -154,8 +154,6 @@ footer {
 
 #social-contact i:hover {
     cursor: pointer;
-
-
 }
 
 .stars a:before {
@@ -168,9 +166,8 @@ footer {
 }
 
 .stars a:hover:before,
-.stars a:hover ~ a:before,
+.stars a:hover~a:before,
 .stars a.active:before,
-.stars a.active ~ a:before {
+.stars a.active~a:before {
     color: rgba(252, 154, 6, 0.747);
-
 }
