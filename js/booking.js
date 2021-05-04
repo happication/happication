@@ -1,5 +1,4 @@
-'use strict';
-
+'usestrict';
 
 let locations = [];
 
@@ -114,7 +113,7 @@ Cottages.prototype.inject = function(cottage) {
     textContainer.appendChild(capacity);
     textContainer.appendChild(reserveBtn);
     textContainer.appendChild(showImg);
-    locationContainer.appendChild(showImgContainer);
+    textContainer.appendChild(showImgContainer);
 
     starsDiv.className = 'stars';
 
@@ -131,7 +130,7 @@ Cottages.prototype.inject = function(cottage) {
     starsDiv.appendChild(fifthhStar);
 
 
-
+let laithdiv = document.createElement('div')
 
 
 
