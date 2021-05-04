@@ -1,5 +1,4 @@
-'use strict';
-
+'usestrict';
 
 let locations = [];
 
@@ -90,13 +89,10 @@ Cottages.prototype.inject = function(cottage) {
 
     let locationContainer = document.createElement('div');
     let heading = document.createElement('h2');
-    let starsDiv=document.createElement('div');
     let imgContainer = document.createElement('div');
     let locationImage = document.createElement('img');
     let textContainer = document.createElement('div');
     let description = document.createElement('p');
- 
-
     let starsDiv = document.createElement('div');
     let price = document.createElement('p');
     let capacity = document.createElement('p');
@@ -117,17 +113,7 @@ Cottages.prototype.inject = function(cottage) {
     textContainer.appendChild(capacity);
     textContainer.appendChild(reserveBtn);
     textContainer.appendChild(showImg);
-    locationContainer.appendChild(showImgContainer);
- 
-   
-    starsDiv.className='stars';
-  
-let firstStar=document.createElement('a');
-let secondStar=document.createElement('a');
-let thirdStar=document.createElement('a');
-let fourthStar=document.createElement('a');
-let fifthhStar=document.createElement('a');
-
+    textContainer.appendChild(showImgContainer);
 
     starsDiv.className = 'stars';
 
@@ -144,7 +130,7 @@ let fifthhStar=document.createElement('a');
     starsDiv.appendChild(fifthhStar);
 
 
-
+let laithdiv = document.createElement('div')
 
 
 
@@ -351,71 +337,31 @@ for (let i = 0; i < locations.length; i++) {
 
 //////////////////////////////////////////////////////////////////
 
- 
-let showButton = document.getElementsByClassName('showBtn');
-let allExtarImg = document.getElementsByClassName('moreImg');
-let form = document.getElementById("customerData");
+// let showButton = document.getElementsByClassName('showBtn');
+// let allExtarImg = document.getElementsByClassName('moreImg');
 
+// // for (let i = 0; i < showButton.length; i++) {
+// //     showButton[i].addEventListener('click', render);
+// // }
 
-
-form.addEventListener('submit', handleCustomerSubmit);
-
-function handleCustomerSubmit(event) {
-
-    event.preventDefault();
-for (let i = 0; i < showButton.length; i++) {
-    showButton[i].addEventListener('click', render);
-}
-
-function allButtonsShowMore() {
-    for (let i = 0; i < showButton.length; i++) {
-        showButton[i].textContent = "Show more"
-    }
-}
-// // add listener function
-function render(event) {
-    // change to none from block
-    if (document.getElementById(event.target.id + "-extra").style.display === 'block') {
-        document.getElementById(event.target.id + "-extra").style.display = 'none';
-        allButtonsShowMore()
-            // change to block from none
-    } else {
-        for (let i = 0; i < allExtarImg.length; i++) {
-            allExtarImg[i].style.display = 'none'
-        }
-        allButtonsShowMore()
-        document.getElementById(event.target.id + "-extra").style.display = 'block';
-        event.target.textContent = "Show less"
-    }
-}
-
-let showButton = document.getElementsByClassName('showBtn');
-let allExtarImg = document.getElementsByClassName('moreImg');
-
-// for (let i = 0; i < showButton.length; i++) {
-//     showButton[i].addEventListener('click', render);
+// function allButtonsShowMore() {
+//     for (let i = 0; i < showButton.length; i++) {
+//         showButton[i].textContent = "Show more"
+//     }
 // }
-
-function allButtonsShowMore() {
-    for (let i = 0; i < showButton.length; i++) {
-        showButton[i].textContent = "Show more"
-    }
-}
-// // add listener function
-function render(event) {
-    // change to none from block
-    if (document.getElementById(event.target.id + "-extra").style.display === 'block') {
-        document.getElementById(event.target.id + "-extra").style.display = 'none';
-        allButtonsShowMore()
-            // change to block from none
-    } else {
-        for (let i = 0; i < allExtarImg.length; i++) {
-            allExtarImg[i].style.display = 'none'
-        }
-        allButtonsShowMore()
-        document.getElementById(event.target.id + "-extra").style.display = 'block';
-        event.target.textContent = "Show less"
-    }
-
-}
-}
+// // // add listener function
+// function render(event) {
+//     // change to none from block
+//     if (document.getElementById(event.target.id + "-extra").style.display === 'block') {
+//         document.getElementById(event.target.id + "-extra").style.display = 'none';
+//         allButtonsShowMore()
+//             // change to block from none
+//     } else {
+//         for (let i = 0; i < allExtarImg.length; i++) {
+//             allExtarImg[i].style.display = 'none'
+//         }
+//         allButtonsShowMore()
+//         document.getElementById(event.target.id + "-extra").style.display = 'block';
+//         event.target.textContent = "Show less"
+//     }
+// }
