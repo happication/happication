@@ -1,14 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-
-*{
+* {
     margin: 0%;
     padding: 0%;
 }
 
-
 body {
-    background-image: url(../img/2-edit.jpg);
+    z-index: 1;
+    background-image: url(../img/2-edit.jpg); 
     width: 100%;
     height: 100vh;
     font-family: 'Open Sans', sans-serif;
@@ -18,6 +17,7 @@ body {
 }
 
 body {
+  
 
     display: grid;
     grid-template-rows: 100px 1fr 70px;
@@ -28,44 +28,47 @@ header {
     margin-top: 20px;
     grid-template-columns: repeat(2, 1fr);
     position: relative;
+    
 }
+
 #logo {
     position: absolute;
-    left: 30px;
-    width: 70px;
+    left: 60px;
+    width: 56px;
+    top: -15px;
+    background-color: rgba(0, 0, 0, 0.6); 
+ 
 }
+
 nav {
+    
     position: absolute;
     right: 50px;
     grid-template-columns: repeat(4, 1fr);
+
 }
+
 nav a {
+    background-color: rgba(0, 0, 0, 0.4); 
     text-decoration: none;
     color: white;
     padding: 10px 30px;
     font-size: 18px;
     font-weight: bold;
 }
+
 nav a:hover {
     background-color: rgba(0, 0, 0, 0.6);
     cursor: pointer;
 }
 
-
- #addformContainer {
-   text-align: center;
-   font-family: 'Open Sans', sans-serif;
-  
-  
-   color: white;
-   
-   width: 830px;
-   margin: auto;
-
-    
-}  
-
-
+#addformContainer {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    width: 830px;
+    margin: auto;
+}
 
 a {
     text-decoration: none;
@@ -74,113 +77,108 @@ a {
 legend {
     width: 820px;
     margin: auto;
-    border-radius: 10PX 15PX 0PX 0PX;
+    border-radius: 10PX 10PX 0PX 0PX;
     background-color: rgb(78, 80, 80);
     color: #FFFFFF;
     padding: 10PX 0PX 10PX 0PX;
     text-align: center;
     font-size: 30px;
     display: block;
-
 }
-#addcottage{
 
-    background-color: rgba(0,0,0,0.5); 
-     width: 800PX;
+#addcottage {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 800PX;
     margin: auto;
+
      padding: 10px;
      height: 404px;
+     border-radius: 0PX 0PX 10PX 10PX;
 
 }
-.right{
-    position: relative;
-    margin-left: ;
-}
+
 #owner{
+
     width: 23%;
     height: 18px;
     margin-left: 18px;
     margin-top: 30px;
-
-
 }
 
- #contact{
+#contact {
     width: 21%;
     height: 18px;
-
     margin-left: 34px;
-
     margin-top: 10px;
-} 
+}
 
 #name {
-
     width: 23%;
     height: 18px;
     margin-left: 13px;
     margin-top: 10px;
-
-
-
-
 }
-#location{
+
+#location {
     width: 21%;
     height: 18px;
-
     margin-left: 12px;
     margin-top: 10px;
 }
+
 #price{
-    width: 6%;
-    height: 19px;
-    margin-left: 21px;
-    margin-top: 10px;
+    width: 3%;
+    height: 16px;
+    margin-left: -223px;
+    margin-top: -12px;
+    position: absolute;
 }
+
 
 
 
 #terms{
 position: relative;
-top: 10px;
+
 }
 
- #agree{
+#agree {
     position: relative;
-    top: 10px;
+
+    top: -1px;
 } 
  
 #submit{
     position: relative;
 
-    top: 28px;
+    top: 17px;
+
     border: none;
     height: 30px;
-    background-color:#e6e1db;
+    background-color: #e6e1db;
     border-radius: 6px 6px 6px 6px;
     font-size: 5mm;
     width: 170px;
-    
 }
 
-
-#submit:hover{
+#submit:hover {
     background-color: cornflowerblue;
-
 }
- a{
-  margin-left: 10px;
- } 
 
- footer {
-    
+a {
+    margin-left: 10px;
+}
+
+footer {
     text-align: center;
     margin-top: 40px;
 }
-#social-contact{
+
+#social-contact {
     margin-top: -13px;
+    font-size: 6mm;
 }
+
 #social-contact i {
     padding: 0px 10px;
 }
@@ -189,32 +187,49 @@ top: 10px;
     cursor: pointer;
 }
 
-
-fieldset{
+fieldset {
     border: none;
 }
 
+
 .pric{
-    margin-left: -524px;
+    margin-left: -351px;
+    margin-top: -13px;
+    position: absolute;
+
 }
 
-.cottage{
+.cottage {
     margin-left: 60px;
 }
 
-.gapphone{
-margin-left: 60px;
+.gapphone {
+    margin-left: 60px;
 }
 
-#description{
-    margin-top: 11px;
-}
 
-.owne{
+
+
+
+.owne {
     margin-left: -1px;
 }
 
-.terms{
+.terms {
     color: aquamarine;
+
 }
 
+.description{
+    
+    margin-right: 620px;
+}
+
+#description{
+    width: 88%;
+}
+
+#terms{
+    margin-top: 23px;
+
+}
