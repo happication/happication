@@ -6,12 +6,16 @@ body {
     grid-template-rows: 100px 1fr 70px;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
+   
+    
 }
+
 
 main {
     background-image: url(../img/4.jpg);
     background-size: cover;
 }
+
 
 header {
     display: grid;
