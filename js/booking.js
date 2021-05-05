@@ -6,14 +6,17 @@ let result = document.getElementById('result');
 
 
 let all = [];
-
+let alls = [];
 function Save(name, path, ) {
     this.name = name;
     this.path = path;
     all.push(this);
+    alls.push(this);
 }
 
-const cottageName = ['MARIAM VILLA', 'SWITCH VILLA', 'PHILADELPHIA VILLA', 'SKY VILLAGE VILLA', 'MOUNTAIN VILLA', 'TERESA CHALET VILLA', 'ZAID VIILA', 'ADAM VILLA', 'PARADISE VILLA', 'SAWA VILLA', 'WINGS VILLA', 'YAFA VILLA', 'YALLA VILLA', 'DREAM VILLA', 'EVA VILLA', 'DEER VILLA', 'BIRD VILLA', 'BYBLOS VILLA', 'FARAH VILLA', 'HAWAII VILLA'];
+
+
+const cottageName = ['MARIAM VILLA', 'SWITCH VILLA', 'PHILADELPHIA VILLA', 'SKY VILLAGE VILLA', 'MOUNTAIN VILLA', 'TERESA CHALET VILLA', 'ZAID VILLA', 'ADAM VILLA', 'PARADISE VILLA', 'SAWA VILLA', 'WINGS VILLA', 'YAFA VILLA', 'YALLA VILLA', 'DREAM VILLA', 'EVA VILLA', 'DEER VILLA', 'BIRD VILLA', 'BYBLOS VILLA', 'FARAH VILLA', 'HAWAII VILLA'];
 
 const cottageLocation = ['Amman', 'Amman', 'Amman', 'Amman', 'Amman', 'Salt', 'Salt', 'Salt', 'Salt', 'Salt', 'Irbid', 'Irbid', 'Irbid', 'Irbid', 'Irbid', 'Jerash', 'Jerash', 'Jerash', 'Jerash', 'Jerash'];
 const cottageDesq = ['barbecue, Heated swimming pool, children Swimming pool, Jacuzzi, Air-conditioned rooms, Sun loungers, DJ, janitor,  Children play area, WIFI, table tennis.', 'barbecue, football stadium, Children play area,  Air-conditioned rooms, DJ, WIFI, barbecue, Play Station, External headphones , Sun loungers', 'barbecue, Heated swimming pool, Sun loungers, children Swimming pool, Children play area.', 'barbecue, children Swimming pool, table tennis, External headphones.', 'Heated swimming pool, Sun loungers, table tennis, Play Station, WIFI, External headphones,barbecue.', 'barbecue, children Swimming pool, Air-conditioned rooms, Jacuzzi, Children play area, DJ,Sun loungers, Play Station,WIFI.', 'barbecue, Children play area, DJ, football stadium, Heated swimming pool, Sun loungers,table tennis, Play Station, WIFI.', 'barbecue, Heated swimming pool, Play Station.', 'barbecue, Sun loungers, WIFI, External headphones‏.', 'barbecue, children Swimming pool, Air-conditioned rooms, Jacuzzi, Children play area, Sun loungers, table tennis, Play Station.', 'barbecue, children Swimming pool, Air-conditioned rooms, Jacuzzi, Children play area, Play Station', 'barbecue, DJ, Heated swimming pool, External headphones‏, Heated swimming pool, Sun loungers.', 'Sun loungers, Air-conditioned rooms, WIFI, barbecue, table tennis, DJ, Play Station,External headphones', 'children Swimming pool, Sun loungers, Air-conditioned rooms, barbecue, Play Station, WIFI, External headphones, DJ, Billiard, Jacuzzi, table tennis ', 'Air-conditioned rooms, DJ, WIFI, barbecue, Play Station, External headphones, Children play area, Sun loungers', 'Air-conditioned rooms,barbecue, Children play area, DJ, Heated swimming pool, Sun loungers, table tennis, Play Station, WIFI, External headphones', 'Air-conditioned rooms,barbecue, Jacuzzi, Children play area, DJ, Sun loungers, Heated swimming pool, Play Station, WIFI, External headphones', 'External headphones, barbecue, Air-conditioned rooms, Sun loungers,DJ, WIFI,', 'External headphones, barbecue, Air-conditioned rooms, Sun loungers,DJ, WIFI', 'Air-conditioned rooms, DJ, WIFI, barbecue, Play Station, External headphones, childrens play area, Sun loungers'];
@@ -235,44 +238,46 @@ function render(event) {
 form.addEventListener('submit', handleCustomerSubmit);
 
 function handleCustomerSubmit(event) {
-
+    alls.shift();
+    alls.shift();
     event.preventDefault();
 
     let place = event.target.categouryPlace.value;
 
     let pplCapacity = event.target.categouryPpl.value;
 
-
-
+    console.log('1')
+   
     result.innerHTML = "";
-
+    
     for (let i = 0; i < locations.length; i++) {
         if (place == 'NoPlaceCategoury') {
 
             Cottages.prototype.inject(locations[i]);
             // console.log('first', Cottages);
 
-
+            
         }
         if ((locations[i].cottageCapacity == pplCapacity) && (locations[i].cottageLocation == place)) {
 
             Cottages.prototype.inject(locations[i]);
 
 
-
-
-            let render = new Save(cottageName[i], cottageImg[i])
-            localStorage.setItem('keyf', JSON.stringify(all));
-
+           
+            
+            
+                let render = new Save(cottageName[i], cottageImg[i])
+                localStorage.setItem('keyf', JSON.stringify(alls));
+    
+            
+        
 
 
         }
 
     }
 
-    let filter = JSON.parse(localStorage.getItem('keyf'))
-    console.log(filter);
-
+    
 
 
 
@@ -305,23 +310,40 @@ function handleCustomerSubmit(event) {
     }
 
 
-
-
-
+    let filter = JSON.parse(localStorage.getItem('keyf'))
+    console.log(filter);
+if(filter.length>1){
+    
     for (let i = 0; i < filter.length; i++) {
+        console.log(i);
+            booknow[i].onclick = function() {
+                
+               
+                let render = new Save(filter[i].name, filter[i].path)
+                localStorage.setItem('key', JSON.stringify(alls));
+        
+                window.location=("./form.html");
+            }
+        
+        } 
+}
 
-        booknow[i].onclick = function() {
-            all.shift();
-            all.shift();
-            let render = new Save(filter[i].name, filter[i].path)
-            localStorage.setItem('key', JSON.stringify(all));
+if(filter.length===1){
+    
+    
+    booknow.onclick = function() {
+       
+        let render = new Save(filter[0].name, filter[0].path)
+        localStorage.setItem('key', JSON.stringify(alls));
 
-            window.open("./form.html");
-        }
-
+        window.location=("./form.html");
     }
+}
+
 
 }
+
+
 
 
 for (let i = 0; i < locations.length; i++) {
@@ -331,7 +353,7 @@ for (let i = 0; i < locations.length; i++) {
         let render = new Save(cottageName[i], cottageImg[i])
         localStorage.setItem('key', JSON.stringify(all));
 
-        window.open("./form.html");
+        window.location=("./form.html");
     }
 
 }

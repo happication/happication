@@ -1,4 +1,4 @@
-'use strict';
+// 'use strict';
 // let infos = document.getElementsByClassName('info');
 
 // let show = document.getElementById('detailsButton')

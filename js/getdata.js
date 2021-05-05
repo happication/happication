@@ -14,8 +14,17 @@ article.appendChild(names);
 
 
 let data = JSON.parse(localStorage.getItem('key'));
+for (let i = 0; i < data.length; i++) {
+    
+    mainimg.src = data[i].path;
 
-mainimg.src = data[0].path;
+names.textContent = data[i].name;
+}
 
-names.textContent = data[0].name;
 
+// let datas = JSON.parse(localStorage.getItem('keyf'));
+// if(datas){
+//     mainimg.src = datas[0].path;
+
+//     names.textContent = datas[0].name;
+// }
