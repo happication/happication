@@ -6,7 +6,13 @@ body {
     grid-template-rows: 100px 1fr 70px;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
+    background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full%20page/img(11).jpg") ;
+     background-repeat: no-repeat;
+    background-size: cover;
+    
 }
+
+
 
 header {
     display: grid;
