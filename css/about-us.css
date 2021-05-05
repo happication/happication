@@ -6,12 +6,15 @@ body {
     grid-template-rows: 100px 1fr 70px;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-    background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full%20page/img(11).jpg") ;
-     background-repeat: no-repeat;
-    background-size: cover;
+   
     
 }
 
+
+main {
+    background-image: url(../img/adam/4.jpg);
+    background-size: cover;
+}
 
 
 header {
@@ -78,13 +81,13 @@ h1 {
     display: flex;
     margin: auto;
     gap: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .student {
     display: grid;
     grid-template-rows: 300px 100px;
-    background-color: rgb(207, 207, 207);
+    background-color: rgba(184, 175, 175, 0.712);
     height: 400px;
     width: 300px;
     padding: 5px;
@@ -125,7 +128,6 @@ main a {
 
 footer {
     text-align: center;
-    margin-top: 30px;
     background-color: #3d84b8;
     height: 100px;
     padding-top: 30px;

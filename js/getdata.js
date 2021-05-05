@@ -21,10 +21,3 @@ for (let i = 0; i < data.length; i++) {
 names.textContent = data[i].name;
 }
 
-
-// let datas = JSON.parse(localStorage.getItem('keyf'));
-// if(datas){
-//     mainimg.src = datas[0].path;
-
-//     names.textContent = datas[0].name;
-// }

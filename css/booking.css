@@ -6,7 +6,6 @@
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0px;
-    /* background-color: rgba(255, 223, 107, .8); */
 }
 
 
@@ -37,7 +36,6 @@ nav {
 
 nav a {
     text-decoration: none;
-    /* color: white; */
     padding: 10px 30px;
     font-size: 18px;
     color: white;
@@ -49,7 +47,6 @@ nav a:hover {
 }
 
 main {
-    /* grid-template-columns: 300px 1fr; */
     margin-top: 30px;
     width: 85%;
     margin: auto;
@@ -83,7 +80,6 @@ select {
     height: 35px;
     margin: auto;
     background-color: #3d84b8;
-    /* background-color: #fdcb40e0; */
     color: white;
     margin-bottom: 10px;
 }
@@ -94,24 +90,18 @@ select {
 }
 
 #bookForm {
-    /* border-right: 0.5px solid rgb(30, 2, 133); */
     position: relative;
     display: inline;
     clear: both;
-    /* margin-bottom: 30px; */
 }
 
 .location {
-    /* border: 2px solid #3d84b8; */
     border-style: outset;
-    /* {border-style: outset;} */
     padding: 5px;
     margin-bottom: 30px;
     display: grid;
     grid-template-columns: 300px 1fr;
     gap: 40px;
-    /* background-color: white; */
-    /* background-color: rgba(255, 223, 107, .8); */
     background: #eee;
 }
 
@@ -120,7 +110,6 @@ select {
     height: 270px;
     border: 3px;
     border-style: inset;
-    /* object-fit: cover; */
 }
 
 h2 {
@@ -159,9 +148,7 @@ h2 {
     border: none;
     width: 120px;
     height: 40px;
-    /* background-color: #3d84b8; */
     background-color: #fdcb40e0;
-    /* color: white; */
     border-radius: 3px;
     margin: 20px 0px;
 }
@@ -170,9 +157,6 @@ h2 {
     border: none;
     width: 120px;
     height: 40px;
-    /* background-color: #3d84b8; */
-    /* background-color: #fdcb40e0; */
-    /* color: white; */
     border-radius: 3px;
     margin: 20px 10px;
     border: 2px solid #fdcb40e0;

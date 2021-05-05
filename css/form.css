@@ -106,7 +106,6 @@ fieldset{
 
 form{
     align-items: center;
-    /* margin-top: 3%; */
     opacity: 0.8;
     display: block;
 }
@@ -134,19 +133,8 @@ form{
 
   }
   input[type=submit]:hover{
-
-
-   /* background-color: rgb(97, 177, 252); */
-   /* box-shadow: */
-                 /* 1px 1px #53a7ea, */
-                 /* 2px 2px #53a7ea, */
-                 /* 3px 3px #53a7ea; */
-         /* -webkit-transform: translateX(-3px); */
-         /* transform: translateX(-3px); */
          background-color: grey;
          color:white ;
-         
-
   }
   
 main p {
